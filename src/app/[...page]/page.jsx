@@ -1,8 +1,5 @@
 import { builder } from "@builder.io/sdk";
-import { RenderBuilderContent } from "../components/builder";
-import NavBar from "@/components/NavBar/NavBar";
-import Header from "@/components/Header/Header";
-import CarouselBanner from "@/components/Banner/banner";
+import { RenderBuilderContent } from "../../components/builder";
 
 // Builder Public API Key set in .env file
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY);
@@ -23,8 +20,9 @@ export default async function Page(props) {
 
   return (
     <>
-      <NavBar></NavBar>
-
+    <div>hello</div>
+    <div> WHat?</div>
+    <div> testing2</div>
       {/* Render the Builder page */}
       <RenderBuilderContent content={content} model={builderModelName} />
     </>
