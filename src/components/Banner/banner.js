@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 
 import BuilderImage from '../ImageNexthook';
 
-builder.init('d9fdc2c550074f15975b0cd575924b4a');
+builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY);
 
 
 const CarouselBanner = () => {

@@ -1,0 +1,96 @@
+/*# sourceMappingURL=MachineBox.css.map */
+.machineCard,
+.machineCard * {
+  box-sizing: border-box;
+}
+.machineCard {
+  border-radius: 1.25rem;
+  padding: 1.125rem 1.25rem 1.125rem 1.25rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.machineCard .innerBox {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  width: 25.125rem;
+  position: relative;
+}
+.machineCard .title {
+  background: #ac2433;
+  border-radius: 1.25rem;
+  padding: 0.3125rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 25.125rem;
+  position: relative;
+  box-shadow: var(
+    --tag-box-shadow,
+    0.0625rem 0.0625rem 0.3125rem 0.0625rem rgba(0, 0, 0, 0.25)
+  );
+}
+.machineCard .titleFont {
+  color: #fef3f2;
+  text-align: center;
+  font-family: "ChakraPetch-Medium", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.machineCard .machineImage {
+  border-radius: 0.625rem;
+  flex-shrink: 0;
+  width: 11.9375rem;
+  height: 11.1875rem;
+  position: relative;
+  box-shadow: var(
+    --card-box-shadow,
+    0rem 0rem 1.25rem 0rem rgba(0, 0, 0, 0.25)
+  );
+  object-fit: cover;
+}
+.machineCard .description {
+  border-radius: 0.625rem;
+  padding: 0.4375rem 0.5rem 0.4375rem 0.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 11.1875rem;
+  position: relative;
+  overflow: visible;
+}
+.machineCard
+  .descriptionFont {
+  color: #4d4d4d;
+  text-align: left;
+  font-family: "ChakraPetch-Regular", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  position: relative;
+  width: 10.9375rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
