@@ -1,6 +1,13 @@
 /*# sourceMappingURL=MachineBox.css.map */
+.machineCardmaster{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .machineCard,
 .machineCard * {
+    display: flex;
   box-sizing: border-box;
 }
 .machineCard {

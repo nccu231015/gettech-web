@@ -5,6 +5,7 @@ import './MachineCard.css';
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY);
 
 const MachineCard = (props) => {
+    {`machine card`+console.log(props)}
     return(
         <div className='machineCard'>
             <div className='innerBox'>

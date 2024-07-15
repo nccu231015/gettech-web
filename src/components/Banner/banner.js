@@ -11,27 +11,12 @@ import BuilderImage from '../ImageNexthook';
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY);
 
 
-const CarouselBanner = () => {
-    const [links, setLinks] = useState([]);
-
-    useEffect(() => {
-        async function fetchContent() {
-          const links = await builder.getAll("carasoul-image", {
-            // You can use options for queries, sorting, and targeting here
-            // https://github.com/BuilderIO/builder/blob/main/packages/core/docs/interfaces/GetContentOptions.md
-          });
-          setLinks(links);
-        }
-        fetchContent();
-      }, []);
-
-      console.log(links)
-       
+const CarouselBanner = ({carasoul}) => {
     return (
         <Carousel showThumbs={false} autoPlay infiniteLoop className='carousel'>
-            {links.map((link, index) => (
+            {carasoul.map((link, index) => (
                 <div key={index}>
-                    <BuilderImage src={link.data.images} width={0} height={0}></BuilderImage>
+                    <BuilderImage src={link.image} width={0} height={0}></BuilderImage>
                 </div>
           ))}
         </Carousel>
