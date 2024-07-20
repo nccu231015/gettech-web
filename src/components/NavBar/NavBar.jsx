@@ -1,23 +1,23 @@
-
-import Image from "next/image"
 import "./NavBar.css"
+
 export default function NavBar(){
     return(
-        <div className="navbar-wrapper">
-            <div className="logo">
-                <div>GET-TECH</div>
-                <div>台工精密科技股份有限公司</div>
-            </div>
-            <div className="navbar">
-                <div>CNC EXPERT</div>
-                <div>INDUSTRY</div>
-                <div>EQUIPMENT</div>
-                <div>ABOUT GET-TECH</div>
-                <div>CONTACT US</div>
-                <div>ABOUT CH-GROUP</div>
-            </div>
-            <div className="language-switch">
-                <div>繁體中文</div>
+        <div className='group'>
+            <div className='navBar'>
+                <button className='languageButton'>
+                    繁體中文
+                </button>
+                <div className='flexRowContainer'>
+                    <img className='companyImage' src={'/assets/GetTech.svg'} alt="GetTechLogo" />
+                    <div className='highlightTextRow'>
+                        <p className='cncExpertText'>CNC EXPERT</p>
+                        <p className='industryText'>INDUSTRY</p>
+                        <p className='equipmentText'>EQUIPMENT</p>
+                        <p className='aboutGetTechText'>ABOUT GET-TECH</p>
+                        <p className='contactUsText'>CONTACT US</p>
+                        <p className='chGroupText'>CH-GROUP</p>
+                    </div>
+                </div>
             </div>
         </div>   
     )

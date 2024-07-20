@@ -1,45 +1,110 @@
-.navbar-wrapper {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  font-size: clamp(0.25rem, 1vw + 0.25rem, 1rem);
-  border-radius: 10px;
-  background: white;
-  color: black;
-  box-sizing: content-box;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
-}
-.navbar-wrapper .logo {
-  padding: 1rem 0;
-  border-radius: 10px 0 0 10px;
-  height: 100%;
-  background: #972233;
+.group {
   display: flex;
   flex-direction: column;
+  min-height: 67px;
+  width: 95%;
+}
+
+.navBar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(250, 250, 250, 0.807);
+  border-radius: 10px;
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.25));
+}
+@media (max-width: 1199px) {
+  .navBar {
+    display: none;
+  }
+}
+
+.languageButton {
+  position: absolute;
+  top: 17px;
+  right: 32px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  flex: 13%;
-  color: white;
-  margin-right: 1rem;
+  width: 96px;
+  height: 34px;
+  font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
+  color: rgb(255, 242, 242);
+  text-align: center;
+  background-color: rgb(244, 173, 173);
+  border-radius: 17px;
+  padding: 6.5px 16px;
+  border-style: none;
 }
-.navbar-wrapper .logo div:nth-child(2) {
-  margin-top: 6px;
-  font-size: 0.6rem;
-  letter-spacing: 3px;
-}
-.navbar-wrapper .navbar {
-  flex: 66.7%;
+
+.flexRowContainer {
+  position: relative;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 10px;
+  margin: 0 337px 0 0;
+  width: 1032px;
+  height: 67px;
 }
-.navbar-wrapper .language-switch {
-  flex: 18%;
+
+.companyImage {
+  width: 206px;
+  min-width: 0;
+}
+
+.highlightTextRow {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  gap: 0 10px;
+  width: 766px;
+  min-width: 0;
 }
-.navbar-wrapper .language-switch div {
-  margin-right: 2rem;
-  background: #F4ADAD;
-  padding: 0.5rem 1.2rem;
-  border-radius: 4.875rem;
+
+.cncExpertText {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
+  color: rgb(76, 76, 76);
+}
+
+.industryText {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
+  color: rgb(76, 76, 76);
+}
+
+.equipmentText {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
+  color: rgb(76, 76, 76);
+}
+
+.aboutGetTechText {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
+  color: rgb(76, 76, 76);
+}
+
+.contactUsText {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
+  color: rgb(76, 76, 76);
+}
+
+.chGroupText {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
+  color: rgb(76, 76, 76);
 }/*# sourceMappingURL=NavBar.css.map */

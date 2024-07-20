@@ -7,8 +7,9 @@
 
 .machineCard,
 .machineCard * {
-    display: flex;
+  display: flex;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 .machineCard {
   border-radius: 1.25rem;
@@ -54,7 +55,6 @@
 .machineCard .titleFont {
   color: #fef3f2;
   text-align: center;
-  font-family: "ChakraPetch-Medium", sans-serif;
   font-size: 1.25rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -92,7 +92,6 @@
   .descriptionFont {
   color: #4d4d4d;
   text-align: left;
-  font-family: "ChakraPetch-Regular", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   position: relative;

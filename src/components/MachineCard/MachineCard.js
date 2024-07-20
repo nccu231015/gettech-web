@@ -21,6 +21,6 @@ const MachineCard = (props) => {
             </div>
         </div>
     );
-};
+}; 
 
 export default MachineCard;
