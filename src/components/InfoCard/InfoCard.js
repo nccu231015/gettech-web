@@ -32,12 +32,13 @@ return (
                     <div className="locationHighlight">{props.Location}</div>
                 </div>
             </div>
-        </div>
-        <img
+            <img
             className="IFC_additionalImage"
             src={isHovered ? '/assets/HoverInfoButton.png' : '/assets/InfoButton.png'}
             alt=""
         />
+        </div>
+        
     </div>
 );
 };

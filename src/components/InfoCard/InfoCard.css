@@ -18,25 +18,25 @@
 }
 
 .flexRowContainer {
-  width: 100%;
+
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 0 10px;
-  margin: 21px 29px;
+  padding: 1.5rem clamp(1vw,2rem,6vw);
 }
 
 .flexColContainer {
   display: flex;
   flex-direction: column;
   gap: 6px 0;
-  width: 100%;
-  min-width: 0;
 }
 
 .companyNameHighlight {
   display: flex;
   align-items: center;
   font: 900 18px/1.22 "Chakra Petch", Helvetica, Arial, serif;
+  font-size: clamp(1vw, 24px, 3.5vw);;
   color: rgb(77 77 77);
   letter-spacing: -0.1px;
   transition: color 0.5s;
@@ -78,11 +78,8 @@
 }
 
 .IFC_additionalImage {
-  position: absolute;
-  top: 33%;
-  right: 7%;
-  width: 44px;
-  height: 44px;
+  width: clamp(2vw,44px,6vw);
+  height: clamp(2vw,44px,6vw);
   transition: opacity 0.5s, transform 0.5s;
 }
 

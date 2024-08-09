@@ -1,10 +1,14 @@
+
+
 .ArticleTitleParent{
+    padding: 0 3rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
 }
+
 
 .ArticleMainTitle{
     font-size: 2.625rem;

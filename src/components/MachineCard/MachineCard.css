@@ -9,7 +9,7 @@
 .mc_machineCard * {
   display: flex;
   box-sizing: border-box;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 .mc_machineCard {
   border-radius: 1.25rem;
