@@ -1,0 +1,20 @@
+@use "../utils" as *;
+
+.mediumTitle_container {
+    display: flex;
+    flex-direction: column;
+    background: center center / 100% 100% no-repeat;
+    background-image: url("/assets/MediumTitle_backgroundImg.png");
+    border-radius: 20px 20px 0 0;
+    filter: drop-shadow(1px 1px 5px rgb(0 0 0 / 25%));
+    margin:60px 0px 30px 0px ;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+    font: 700 48px/1.29 "Chakra Petch", Helvetica, Arial, serif;
+    color: rgb(254 243 242);
+    text-align: center;
+}

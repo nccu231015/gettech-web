@@ -12,7 +12,9 @@
     "@builder.io/dev-tools": "^1.0.17",
     "@builder.io/react": "^3.2.9",
     "@builder.io/sdk": "^2.2.4",
+    "@fontsource/montserrat": "^5.0.18",
     "next": "14.2.4",
+    "normalize.css": "^8.0.1",
     "react": "^18",
     "react-dom": "^18",
     "react-responsive-carousel": "^3.2.23"

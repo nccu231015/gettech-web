@@ -7,16 +7,16 @@ builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY);
 const MachineCard = (props) => {
     {`machine card`+console.log(props)}
     return(
-        <div className='machineCard'>
-            <div className='innerBox'>
-                <div className='title'>
-                    <div className='titleFont'>{props.title}</div>
+        <div className='mc_machineCard'>
+            <div className='mc_innerBox'>
+                <div className='mc_title'>
+                    <div className='mc_titleFont'>{props.title}</div>
                 </div>
                 <div>
-                    <img className='machineImage' src={props.image} alt='MachineImage' />
+                    <img className='mc_machineImage' src={props.image} alt='MachineImage' />
                 </div>
-                <div className='description'>
-                    <div className='descriptionFont'>{props.description}</div>
+                <div className='mc_description'>
+                    <div className='mc_descriptionFont'>{props.description}</div>
                 </div>
             </div>
         </div>

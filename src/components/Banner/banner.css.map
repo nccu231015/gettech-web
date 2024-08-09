@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,SAAS,CAAC;EACN,UAAU,EAAE,MAAM;CAEG;;AAHzB,AAEI,SAFK,CAEL,GAAG,CAAC;EACA,MAAM,EAAE,IAAI;CAAG",
-    "sources": [
-        "banner.sass"
-    ],
-    "names": [],
-    "file": "banner.css"
-}
+{"version":3,"sources":["banner.sass","banner.css"],"names":[],"mappings":"AAAA;EACI,WAAA;ACCJ;;ADCA;EACI,6BAAA;ACEJ;ADDI;EACI,WAAA;EACA,mBAAA;ACGR","file":"banner.css"}

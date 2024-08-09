@@ -1,6 +1,5 @@
 import { builder } from "@builder.io/sdk";
 import { RenderBuilderContent } from "../components/builder";
-import NavBar from "@/components/NavBar/NavBar";
 
 // Builder Public API Key set in .env file
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY);
@@ -20,13 +19,9 @@ export default async function Page(props) {
     .toPromise();
 
   return (
-    <>
-      <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-        <NavBar></NavBar>
-      </div>
-
+    <div className="homepage">
       {/* Render the Builder page */}
       <RenderBuilderContent content={content} model={builderModelName} />
-    </>
+    </div>
   );
 }

@@ -1,0 +1,56 @@
+.equipmentCard {
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 20px 0;
+}
+
+.titleContainer {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  background: center center/100% 100% no-repeat;
+  background-image: url("/assets/card_backgroundImage.png");
+  border-radius: 10px;
+}
+
+.titleText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font: 500 2rem/1.5 "Chakra Petch", Helvetica, Arial, serif;
+  color: rgb(254, 243, 242);
+  text-align: center;
+}
+
+.cardImageContainer {
+  height: 504px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1px 0 0;
+}
+
+.cardImage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.aboutImage {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  width: 93px;
+  height: 28px;
+  background: center center/100% 100% no-repeat;
+  background-image: url("/assets/about.png");
+  overflow: hidden;
+}/*# sourceMappingURL=EquipmentCard.css.map */

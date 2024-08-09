@@ -1,0 +1,23 @@
+.ArticleTitleParent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.ArticleMainTitle{
+    font-size: 2.625rem;
+    font-weight: 700;
+    font-family: "Chakra Petch";
+    text-align: left;
+    color: black;
+}
+
+.ArticleSubTitle{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: "Chakra Petch";
+    text-align: left;
+    color: black;
+}

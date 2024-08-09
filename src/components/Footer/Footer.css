@@ -1,0 +1,164 @@
+.footerChild {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.getTechPrecision {
+    position: relative;
+}
+.taiwanIcon {
+    width: 1.5rem;
+    position: relative;
+    height: 1.5rem;
+    object-fit: cover;
+}
+.taoyuanTaiwan {
+    position: relative;
+    font-weight: 500;
+}
+.taiwanParent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: 1rem;
+}
+.getTechPrecisionParent {
+    position: absolute;
+    height: 28.38%;
+    width: 89.08%;
+    top: 0%;
+    right: 10.92%;
+    bottom: 71.62%;
+    left: 0%;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: 2rem;
+}
+.viberIcon {
+    width: 1.25rem;
+    position: relative;
+    height: 1.275rem;
+    object-fit: cover;
+}
+.viberParent {
+    position: absolute;
+    height: 14.19%;
+    width: 32.57%;
+    top: 43.92%;
+    right: 67.43%;
+    bottom: 41.89%;
+    left: 0%;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+.mailIcon {
+    width: 1.25rem;
+    position: relative;
+    height: 1.25rem;
+    object-fit: cover;
+}
+.mailParent {
+    position: absolute;
+    height: 14.19%;
+    width: 36.4%;
+    top: 64.86%;
+    right: 63.6%;
+    bottom: 20.95%;
+    left: 0%;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+.locationParent {
+    position: absolute;
+    height: 14.19%;
+    width: 100%;
+    top: 85.81%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+.frameParent {
+    position: absolute;
+    height: 43.59%;
+    width: 90%;
+    top: 35.64%;
+    right: 58.14%;
+    bottom: 20.77%;
+    left: 5.68%;
+}
+.facebookIcon {
+    position: absolute;
+    /* height: 11.78%;
+    width: 2.77%; */
+    top: 71.87%;
+    right: 12.68%;
+    bottom: 16.35%;
+    left: 84.55%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.lineIcon {
+    position: absolute;
+    /* height: 11.78%;
+    width: 2.77%; */
+    top: 71.87%;
+    right: 8.94%;
+    bottom: 16.35%;
+    left: 88.29%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.phoneIcon {
+    position: absolute;
+    /* height: 11.78%;
+    width: 2.77%; */
+    top: 71.87%;
+    right: 5.2%;
+    bottom: 16.35%;
+    left: 92.03%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.footer {
+    width: 100%;
+    position: relative;
+    height: 21.219rem;
+    text-align: left;
+    font-size: 1rem;
+    color: #4d4d4d;
+    font-family: 'Chakra Petch';
+}
+

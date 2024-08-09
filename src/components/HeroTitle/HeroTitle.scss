@@ -1,0 +1,104 @@
+@use "../utils" as *;
+
+.mainHeroSection {
+    display: flex;
+    flex-direction: column;
+    background: center center / 100% 100% no-repeat;
+    background-image: url("/assets/HeroTitle_backgroundImg.png");
+    position: relative;
+
+    .overlay {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("/assets/texture.jpg") center/cover no-repeat;
+        mix-blend-mode: darken;
+        opacity: 0.55;
+        pointer-events: none;
+        z-index: 1;
+        border-radius: 20px;
+    }
+    .content {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.flexColumnContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 24px 0 28px;
+    width: 100%;
+}
+
+.heroTitleCncExpert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 700 88px/1.29 "Chakra Petch", Helvetica, Arial, serif;
+    color: rgb(254 243 242);
+    text-align: center;
+
+    @include lg {
+    font-size: 76px;
+    }
+
+    @include md {
+    font-size: 70px;
+    }
+
+    @include sm {
+    font-size: 66px;
+    }
+
+    @include xs {
+    font-size: 58px;
+    }
+
+    @include xxs {
+    font-size: 38px;
+    }
+
+    @include tn {
+    font-size: 34px;
+    }
+}
+
+.heroTitleMillingMachine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 700 48px/1.29 "Chakra Petch", Helvetica, Arial, serif;
+    color: rgb(254 243 242);
+    text-align: center;
+
+    @include lg {
+    font-size: 40px;
+    }
+
+    @include md {
+    font-size: 36px;
+    }
+
+    @include sm {
+    font-size: 32px;
+    }
+
+    @include xs {
+    font-size: 28px;
+    }
+
+    @include xxs {
+    font-size: 20px;
+    }
+
+    @include tn {
+    font-size: 16px;
+    }
+}

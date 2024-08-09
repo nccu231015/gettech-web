@@ -1,3 +1,9 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .group {
   display: flex;
   flex-direction: column;
@@ -37,7 +43,7 @@
   border-style: none;
 }
 
-.flexRowContainer {
+.NavflexRowContainer {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -48,7 +54,7 @@
   height: 67px;
 }
 
-.companyImage {
+.NavcompanyImage {
   width: 206px;
   min-width: 0;
 }
@@ -67,6 +73,7 @@
   min-width: 0;
   font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
   color: rgb(76, 76, 76);
+  text-decoration: none;
 }
 
 .industryText {
@@ -75,6 +82,7 @@
   min-width: 0;
   font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
   color: rgb(76, 76, 76);
+  text-decoration: none;
 }
 
 .equipmentText {
@@ -83,6 +91,7 @@
   min-width: 0;
   font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
   color: rgb(76, 76, 76);
+  text-decoration: none;
 }
 
 .aboutGetTechText {
@@ -91,6 +100,7 @@
   min-width: 0;
   font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
   color: rgb(76, 76, 76);
+  text-decoration: none;
 }
 
 .contactUsText {
@@ -99,6 +109,7 @@
   min-width: 0;
   font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
   color: rgb(76, 76, 76);
+  text-decoration: none;
 }
 
 .chGroupText {
@@ -107,4 +118,5 @@
   min-width: 0;
   font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
   color: rgb(76, 76, 76);
+  text-decoration: none;
 }/*# sourceMappingURL=NavBar.css.map */

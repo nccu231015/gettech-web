@@ -1,0 +1,256 @@
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  padding: 36px;
+}
+@media (max-width: 1199px) {
+  .aboutSection {
+    padding: 28px;
+  }
+}
+@media (max-width: 575px) {
+  .aboutSection {
+    padding: 16px;
+  }
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 40px 0;
+  margin: 32px 0;
+}
+
+.heroImage {
+  width: 100%;
+  min-height: 12px;
+  border-radius: 7.5px;
+}
+@media (max-width: 479px) {
+  .heroImage {
+    min-height: 10px;
+  }
+}
+
+.flexColumnDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 33px 0;
+  margin: 30px 0;
+}
+
+.aboutMainTitle {
+  width: 548px;
+  font: 700 88px/1.13 "Chakra Petch", Helvetica, Arial, serif;
+  color: rgb(205, 49, 63);
+}
+@media (min-width: 1400px) and (max-width: 2999px) {
+  .aboutMainTitle {
+    align-items: flex-start;
+    font-size: 96px;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1919px) {
+  .aboutMainTitle {
+    font-size: 94px;
+  }
+}
+@media (max-width: 575px) {
+  .aboutMainTitle {
+    align-items: flex-start;
+    font-size: 84px;
+  }
+}
+@media (max-width: 479px) {
+  .aboutMainTitle {
+    font-size: 68px;
+  }
+}
+@media (max-width: 383px) {
+  .aboutMainTitle {
+    font-size: 60px;
+  }
+}
+
+.flexRowImages {
+  display: flex;
+  gap: 0 26px;
+}
+@media (min-width: 1400px) and (max-width: 2999px) {
+  .flexRowImages {
+    -moz-column-gap: 32px;
+         column-gap: 32px;
+  }
+}
+@media (max-width: 1199px) {
+  .flexRowImages {
+    align-items: center;
+    gap: 8px 26px;
+  }
+}
+@media (max-width: 991px) {
+  .flexRowImages {
+    flex-direction: column;
+  }
+}
+
+.secondaryImage {
+  margin: 12.5px 0 0;
+  width: 556px;
+  min-width: 0;
+  border-radius: 16px;
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+}
+@media (min-width: 1400px) and (max-width: 2999px) {
+  .secondaryImage {
+    width: 40%;
+    aspect-ratio: 556/313;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1919px) {
+  .secondaryImage {
+    width: 60%;
+  }
+}
+@media (max-width: 1199px) {
+  .secondaryImage {
+    margin-top: unset;
+    margin-right: unset;
+    margin-bottom: unset;
+    margin-left: unset;
+    width: 100%;
+  }
+}
+
+.flexColumnText {
+  display: flex;
+  flex-direction: column;
+  gap: 1px 0;
+  margin: 0 0 120px;
+  width: 786px;
+  min-width: 0;
+}
+@media (min-width: 1400px) and (max-width: 2999px) {
+  .flexColumnText {
+    width: 70%;
+  }
+}
+@media (max-width: 1199px) {
+  .flexColumnText {
+    margin-top: unset;
+    margin-right: unset;
+    margin-bottom: unset;
+    margin-left: unset;
+    width: 100%;
+  }
+}
+
+.aboutSubTitle {
+  display: flex;
+  align-items: center;
+  font: 700 42px/1.28 "Chakra Petch", Helvetica, Arial, serif;
+  color: rgb(77, 77, 77);
+}
+@media (min-width: 1400px) and (max-width: 2999px) {
+  .aboutSubTitle {
+    font-size: 60px;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1919px) {
+  .aboutSubTitle {
+    font-size: 54px;
+  }
+}
+@media (max-width: 1199px) {
+  .aboutSubTitle {
+    font-size: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .aboutSubTitle {
+    font-size: 42px;
+  }
+}
+@media (max-width: 575px) {
+  .aboutSubTitle {
+    font-size: 40px;
+  }
+}
+@media (max-width: 383px) {
+  .aboutSubTitle {
+    font-size: 36px;
+  }
+}
+
+.textGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.descriptiveSubtitle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  font: 300 20px/1.6 "Chakra Petch", Helvetica, Arial, serif;
+  color: rgb(77, 77, 77);
+}
+@media (min-width: 1400px) and (max-width: 2999px) {
+  .descriptiveSubtitle {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1919px) {
+  .descriptiveSubtitle {
+    font-size: 27px;
+  }
+}
+@media (max-width: 1199px) {
+  .descriptiveSubtitle {
+    font-size: 18px;
+  }
+}
+@media (max-width: 991px) {
+  .descriptiveSubtitle {
+    font-size: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .descriptiveSubtitle {
+    font-size: 18px;
+  }
+}
+
+.ag_additionalImage {
+  position: absolute;
+  right: 0;
+  bottom: -66px;
+  width: 60px;
+  height: 60px;
+}
+@media (max-width: 1199px) {
+  .ag_additionalImage {
+    bottom: -40px;
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .ag_additionalImage {
+    bottom: -55px;
+  }
+}
+
+.footerImage {
+  width: 100%;
+  min-height: 12px;
+  border-radius: 7.5px;
+}
+@media (max-width: 479px) {
+  .footerImage {
+    min-height: 10px;
+  }
+}/*# sourceMappingURL=AboutGETTECH.css.map */

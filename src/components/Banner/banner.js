@@ -13,13 +13,16 @@ builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY);
 
 const CarouselBanner = ({carasoul}) => {
     return (
-        <Carousel showThumbs={false} autoPlay infiniteLoop className='carousel'>
-            {carasoul.map((link, index) => (
-                <div key={index}>
-                    <BuilderImage src={link.image} width={0} height={0}></BuilderImage>
-                </div>
-          ))}
-        </Carousel>
+        <div className='CarouselParent'>
+            <Carousel showThumbs={true} autoPlay infiniteLoop className='carousel'>
+                {carasoul.map((link, index) => (
+                    <div key={index}>
+                        <BuilderImage src={link.image} width={100} height={100}></BuilderImage>
+                    </div>
+                ))}
+            </Carousel>            
+        </div>
+
     );
 };
 

@@ -1,8 +1,11 @@
-.carousel {
-  margin-top: 1.5rem;
+.CarouselParent {
+  width: 100%;
 }
 
-.carousel div {
-  height: 70vh;
+.carousel {
+  margin: 1.5rem 2rem 0rem 2rem;
 }
-/*# sourceMappingURL=banner.css.map */
+.carousel div {
+  width: 100%;
+  border-radius: 20px;
+}/*# sourceMappingURL=banner.css.map */

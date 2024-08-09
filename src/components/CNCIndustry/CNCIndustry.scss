@@ -1,0 +1,606 @@
+@use "../utils" as *;
+
+.industryOverviewSection {
+  display: flex;
+  flex-direction: column;
+  background: center center / 100% 100% no-repeat;
+  background-image: url("/assets/CNCIndustry_background.png");
+  border-radius: 20px;
+  position: relative;
+
+  .overlay {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("/assets/texture.jpg") center/cover no-repeat;
+      mix-blend-mode: darken;
+      opacity: 0.55;
+      pointer-events: none;
+      z-index: 1;
+      border-radius: 20px;
+  }
+
+  .content {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+  }
+}
+  
+  .flexColGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 174px 0;
+    margin: 50px 37px 105px 35px;
+  }
+  
+  .flexRowGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 24px;
+  
+    @include xl {
+      flex-direction: column;
+      gap: 8px 24px;
+    }
+  }
+  
+  .imageMachinery {
+    width: 46.8%;
+    min-width: 0;
+    filter: drop-shadow(0 0 20px rgb(0 0 0 / 25%));
+  
+    @include xl {
+      margin-top: unset;
+      margin-bottom: unset;
+      width: 100%;
+    }
+  }
+  
+  .flexColBox {
+    display: flex;
+    flex-direction: column;
+    place-content: stretch space-evenly;
+    gap: 20px 0;
+    width: 46.8%;
+    min-width: 0;
+  
+    @include xl {
+      width: 100%;
+    }
+  }
+  
+  .imageContainer {
+    position: relative;
+    min-height: 29.5rem;
+    background: center center / 100% 100% no-repeat;
+    background-image: url("/assets/MillingMachine_Img.png");
+    border-radius: 16px;
+    filter: drop-shadow(0 0 20px rgb(0 0 0 / 25%));
+    overflow: hidden;
+  
+    @include xl {
+      min-height: 42rem;
+    }
+  
+    @include lg {
+      min-height: 38rem;
+    }
+  
+    @include md {
+      min-height: 25rem;
+    }
+  
+    @include sm {
+      min-height: 22rem;
+    }
+  
+    @include xs {
+      min-height: 20rem;
+    }
+  
+    @include xxs {
+      min-height: 14rem;
+    }
+  
+    @include tn {
+      min-height: 13rem;
+    }
+  }
+  
+  .imageProcessing {
+    position: absolute;
+    right: 2.5%;
+    bottom: 5%;
+    width: 65px;
+    height: 65px;
+  
+    @include xs {
+      width: 60px;
+      height: 60px;
+    }
+  
+    @include xxs {
+      width: 55px;
+      height: 55px;
+    }
+  }
+  
+  .titleMillingMachine {
+    position: absolute;
+    top: 5%;
+    left: 2.5%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 35px;
+    background: center center / 100% 100% no-repeat;
+    background-image: url("/assets/Title_Background.png");
+    border-radius: 10px;
+    filter: drop-shadow(1px 1px 5px rgb(0 0 0 / 25%));
+  
+    @include xl {
+      width: 95%;
+      height: 15%;
+    }
+  }
+  
+  .medium_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font: 500 24px/1.29 "Chakra Petch", Helvetica, Arial, serif;
+    color: rgb(252 233 231);
+    text-align: center;
+  
+    @include xl {
+      align-items: center;
+      font-size: 48px;
+    }
+  
+    @include lg {
+      font-size: 46px;
+    }
+  
+    @include sm {
+      font-size: 34px;
+    }
+  
+    @include xs {
+      font-size: 32px;
+    }
+  
+    @include xxs {
+      font-size: 18px;
+    }
+  }
+  
+  .flexColBox2 {
+    position: relative;
+    min-height: 29.5rem;
+    background: center center / 100% 100% no-repeat;
+    background-image: url("/assets/CarMilling_Img.png");
+    border-radius: 16px;
+    filter: drop-shadow(0 0 20px rgb(0 0 0 / 25%));
+  
+    @include xl {
+      min-height: 42rem;
+    }
+  
+    @include lg {
+      min-height: 38rem;
+    }
+  
+    @include md {
+      min-height: 25rem;
+    }
+  
+    @include sm {
+      min-height: 22rem;
+    }
+  
+    @include xs {
+      min-height: 20rem;
+    }
+  
+    @include xxs {
+      min-height: 14rem;
+    }
+  
+    @include tn {
+      min-height: 13rem;
+    }
+  }
+  
+  .imageProcessingAlt {
+    position: absolute;
+    right: 2.5%;
+    bottom: 5%;
+    width: 65px;
+    height: 65px;
+  
+    @include xs {
+      width: 60px;
+      height: 60px;
+    }
+  
+    @include xxs {
+      width: 55px;
+      height: 55px;
+    }
+  }
+  
+  .flexColBox3 {
+    position: absolute;
+    top: 5%;
+    left: 2.5%;
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+    height: 35px;
+    background: center center / 100% 100% no-repeat;
+    background-image: url("/assets/Title_Background.png");
+    border-radius: 10px;
+    filter: drop-shadow(1px 1px 5px rgb(0 0 0 / 25%));
+    overflow: hidden;
+  
+    @include xl {
+      width: 95%;
+      height: 15%;
+    }
+  }
+  
+  .titleCarMilling {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font: 600 24px/1.29 "Chakra Petch", Helvetica, Arial, serif;
+    color: rgb(252 233 231);
+    text-align: center;
+  
+    @include xl {
+      align-items: center;
+      font-size: 48px;
+    }
+  
+    @include lg {
+      font-size: 46px;
+    }
+  
+    @include md {
+      font-size: 32px;
+    }
+  
+    @include sm {
+      font-size: 28px;
+    }
+  
+    @include xs {
+      font-size: 24px;
+    }
+  
+    @include xxs {
+      font-size: 16px;
+    }
+  
+    @include tn {
+      font-size: 14px;
+    }
+  }
+  
+  .flexColGroup2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 48px 0;
+    margin: 0 0 0 2px;
+  }
+  
+  .heroTitleIndustry {
+    font: 700 88px/1.29 "Chakra Petch", Helvetica, Arial, serif;
+    color: rgb(254 243 242);
+  
+    @include sm {
+      align-items: flex-start;
+      font-size: 80px;
+    }
+  
+    @include xs {
+      font-size: 74px;
+    }
+  
+    @include xxs {
+      font-size: 60px;
+    }
+  }
+  
+  .flexRowGroup1 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0 8px;
+  
+    @include mq-between(xxl, xxxl) {
+      column-gap: 8px;
+    }
+  
+    @include xl {
+      flex-wrap: wrap;
+      column-gap: 8px;
+    }
+  }
+  
+  .imagePairGroupAerospace {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 118px;
+    width: 22.8%;
+    min-width: 0;
+  }
+  
+  .coverImageAerospace {
+    position: relative;
+    width: 100%;
+    border-radius: 16px;
+    filter: drop-shadow(0 0 20px rgb(0 0 0 / 25%));
+  }
+  
+  .image8Aerospace {
+    position: absolute;
+    right: 2.5%;
+    bottom: 2.5%;
+    width: 45px;
+    height: 45px;
+  
+    @include md {
+      right: 4%;
+      bottom: 4%;
+      width: 40px;
+      height: 40px;
+    }
+  
+    @include sm {
+      width: 35px;
+      height: 35px;
+    }
+  
+    @include xs {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  .contentBoxAerospace {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 10%;
+    background: center center / 100% 100% no-repeat;
+    background-image: url("/assets/Title_Background.png");
+    border-radius: 10px;
+    filter: drop-shadow(1px 1px 5px rgb(0 0 0 / 25%));
+  }
+  
+  .titleAerospace {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    font: 500 24px/1.29 "Chakra Petch", Helvetica, Arial, serif;
+    color: rgb(254 243 242);
+  
+    @include lg {
+      align-items: center;
+      font-size: 20px;
+    }
+  
+    @include md {
+      font-size: 18px;
+    }
+  
+    @include sm {
+      font-size: 12px;
+    }
+  }
+  
+  .imagePairGroupMilitary {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 118px 0 0;
+    width: 22.8%;
+    min-width: 0;
+  }
+  
+  .coverImageMilitary {
+    position: relative;
+    width: 100%;
+    border-radius: 16px;
+    filter: drop-shadow(0 0 20px rgb(0 0 0 / 25%));
+  }
+  
+  .image8Military {
+    position: absolute;
+    right: 2.5%;
+    bottom: 2.5%;
+    width: 45px;
+    height: 45px;
+  
+    @include md {
+      right: 4%;
+      bottom: 4%;
+      width: 40px;
+      height: 40px;
+    }
+  
+    @include sm {
+      width: 35px;
+      height: 35px;
+    }
+  
+    @include xs {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  .contentBoxMilitary {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 10%;
+    background: center center / 100% 100% no-repeat;
+    background-image: url("/assets/Title_Background.png");
+    border-radius: 10px;
+    filter: drop-shadow(1px 1px 5px rgb(0 0 0 / 25%));
+  }
+  
+  .titleMilitary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px auto;
+    width: 100%;
+    height: 100%;
+    font: 500 24px/1.29 "Chakra Petch", Helvetica, Arial, serif;
+    color: rgb(254 243 242);
+    text-align: center;
+  
+    @include lg {
+      align-items: center;
+      font-size: 20px;
+    }
+  
+    @include md {
+      font-size: 18px;
+    }
+  
+    @include sm {
+      font-size: 12px;
+    }
+  }
+
+  .titleCustomize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px auto;
+    width: 100%;
+    height: 100%;
+    font: 500 24px/1.29 "Chakra Petch", Helvetica, Arial, serif;
+    color: rgb(254 243 242);
+    text-align: center;
+  
+    @include lg {
+      align-items: center;
+      font-size: 20px;
+    }
+  
+    @include md {
+      font-size: 18px;
+    }
+  
+    @include sm {
+      font-size: 12px;
+    }
+  }
+  
+  .imagePairGroupElectronic {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 118px;
+    width: 22.8%;
+    min-width: 0;
+  }
+  
+  .coverImageElectronic {
+    position: relative;
+    width: 100%;
+    border-radius: 16px;
+    filter: drop-shadow(0 0 20px rgb(0 0 0 / 25%));
+  }
+  
+  .image8Electronic {
+    position: absolute;
+    right: 2.5%;
+    bottom: 2.5%;
+    width: 45px;
+    height: 45px;
+  
+    @include md {
+      right: 4%;
+      bottom: 4%;
+      width: 40px;
+      height: 40px;
+    }
+  
+    @include sm {
+      width: 35px;
+      height: 35px;
+    }
+  
+    @include xs {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  .contentBoxElectronic {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 10%;
+    background: center center / 100% 100% no-repeat;
+    background-image: url("/assets/Title_Background.png");
+    border-radius: 10px;
+    filter: drop-shadow(1px 1px 5px rgb(0 0 0 / 25%));
+  }
+  
+  .titleElectronic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px auto;
+    width: 100%;
+    height: 100%;
+    font: 500 24px/1.29 "Chakra Petch", Helvetica, Arial, serif;
+    color: rgb(254 243 242);
+    text-align: center;
+  
+    @include lg {
+      align-items: center;
+      font-size: 20px;
+    }
+  
+    @include md {
+      font-size: 18px;
+    }
+  
+    @include sm {
+      font-size: 12px;
+    }
+  }
+  

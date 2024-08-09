@@ -1,0 +1,227 @@
+@use "../utils" as *;
+
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  padding: 36px;
+
+  @include lg {
+    padding: 28px;
+  }
+
+  @include xs {
+    padding: 16px;
+  }
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 40px 0;
+  margin: 32px 0;
+}
+
+.heroImage {
+  width: 100%;
+  min-height: 12px;
+  border-radius: 7.5px;
+
+  @include xxs {
+    min-height: 10px;
+  }
+}
+
+.flexColumnDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 33px 0;
+  margin: 30px 0;
+}
+
+.aboutMainTitle {
+  width: 548px;
+  font: 700 88px/1.13 "Chakra Petch", Helvetica, Arial, serif;
+  color: rgb(205 49 63);
+
+  @include mq-between(xl, xxxl) {
+    align-items: flex-start;
+    font-size: 96px;
+  }
+
+  @include mq-between(xl, xxl) {
+    font-size: 94px;
+  }
+
+  @include xs {
+    align-items: flex-start;
+    font-size: 84px;
+  }
+
+  @include xxs {
+    font-size: 68px;
+  }
+
+  @include tn {
+    font-size: 60px;
+  }
+}
+
+.flexRowImages {
+  display: flex;
+  gap: 0 26px;
+
+  @include mq-between(xl, xxxl) {
+    column-gap: 32px;
+  }
+
+  @include lg {
+    align-items: center;
+    gap: 8px 26px;
+  }
+
+  @include md {
+    flex-direction: column;
+  }
+}
+
+.secondaryImage {
+  margin: 12.5px 0 0;
+  width: 556px;
+  min-width: 0;
+  border-radius: 16px;
+  filter: drop-shadow(0 0 20px rgb(0 0 0 / 25%));
+
+  @include mq-between(xl, xxxl) {
+    width: 40%;
+    aspect-ratio: 556 / 313;
+  }
+
+  @include mq-between(xl, xxl) {
+    width: 60%;
+  }
+
+  @include lg {
+    margin-top: unset;
+    margin-right: unset;
+    margin-bottom: unset;
+    margin-left: unset;
+    width: 100%;
+  }
+}
+
+.flexColumnText {
+  display: flex;
+  flex-direction: column;
+  gap: 1px 0;
+  margin: 0 0 120px;
+  width: 786px;
+  min-width: 0;
+
+  @include mq-between(xl, xxxl) {
+    width: 70%;
+  }
+
+  @include lg {
+    margin-top: unset;
+    margin-right: unset;
+    margin-bottom: unset;
+    margin-left: unset;
+    width: 100%;
+  }
+}
+
+.aboutSubTitle {
+  display: flex;
+  align-items: center;
+  font: 700 42px/1.28 "Chakra Petch", Helvetica, Arial, serif;
+  color: rgb(77 77 77);
+
+  @include mq-between(xl, xxxl) {
+    font-size: 60px;
+  }
+
+  @include mq-between(xl, xxl) {
+    font-size: 54px;
+  }
+
+  @include lg {
+    font-size: 40px;
+  }
+
+  @include md {
+    font-size: 42px;
+  }
+
+  @include xs {
+    font-size: 40px;
+  }
+
+  @include tn {
+    font-size: 36px;
+  }
+}
+
+.textGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.descriptiveSubtitle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  font: 300 20px/1.6 "Chakra Petch", Helvetica, Arial, serif;
+  color: rgb(77 77 77);
+
+  @include mq-between(xl, xxxl) {
+    font-size: 30px;
+  }
+
+  @include mq-between(xl, xxl) {
+    font-size: 27px;
+  }
+
+  @include lg {
+    font-size: 18px;
+  }
+
+  @include md {
+    font-size: 20px;
+  }
+
+  @include xs {
+    font-size: 18px;
+  }
+}
+
+.ag_additionalImage {
+  position: absolute;
+  right: 0;
+  bottom: -66px;
+  width: 60px;
+  height: 60px;
+
+  @include lg {
+    bottom: -40px;
+    width: 50px;
+    height: 50px;
+  }
+
+  @include md {
+    bottom: -55px;
+  }
+}
+
+.footerImage {
+  width: 100%;
+  min-height: 12px;
+  border-radius: 7.5px;
+
+  @include xxs {
+    min-height: 10px;
+  }
+}

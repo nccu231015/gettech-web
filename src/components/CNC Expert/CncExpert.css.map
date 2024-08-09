@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,WAAW,CAAC;EACR,MAAM,EAAE,MAAM;EACd,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;CAQkB;;AAXnC,AAKI,WALO,CAKP,KAAK,CAAC;EACH,IAAI,EAAE,CAAC;EACP,YAAY,EAAE,MAAM;CAAG;;AAP9B,AAQI,WARO,CAQP,MAAM,CAAC;EACH,IAAI,EAAE,CAAC;EACP,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;CAAG",
-    "sources": [
-        "CncExpert.sass"
-    ],
-    "names": [],
-    "file": "CncExpert.css"
-}
