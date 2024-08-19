@@ -1,9 +1,12 @@
 @use "../utils" as *;
 
-.container{
+.nb_container{
     display: flex;
     justify-content: center;
     width: 100%;
+    @include lg {
+        display: contents;
+    }
 }
 
 .group {
@@ -11,6 +14,10 @@
     flex-direction: column;
     min-height: 67px;
     width: 95%;
+    margin: 2rem 0rem 2rem 0rem;
+    @include lg {
+        display: none;
+    }
 }
 
 .navBar {
@@ -75,6 +82,7 @@
     font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
     color: rgb(76 76 76);
     text-decoration: none;
+    cursor: pointer;
 }
 
 .industryText {
@@ -84,6 +92,7 @@
     font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
     color: rgb(76 76 76);
     text-decoration: none;
+    cursor: pointer;
 }
 
 .equipmentText {
@@ -102,6 +111,7 @@
     font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
     color: rgb(76 76 76);
     text-decoration: none;
+    cursor: pointer;
 }
 
 .contactUsText {
@@ -120,4 +130,93 @@
     font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
     color: rgb(76 76 76);
     text-decoration: none;
+}
+
+.MenuContainer {
+    display: none;
+    padding: 0;
+    margin: 0;
+    @include lg {
+        display: contents;
+    }
+}
+
+.MenuRowContainer {
+    display: flex;
+    padding-top: 2rem;
+    width: 100%;
+    background-color: #AC2433;
+    justify-content: space-between;
+}
+
+.MenuButton {
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.MenuPhone{
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.abc{
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    display: none;
+}
+
+.overlayMenu {
+    position: relative;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #AC2433;
+    z-index: 1000;
+    padding-top: 2rem;
+}
+
+.hm_CNCexpert{
+    font: 600 2rem/1.18 "Chakra Petch", Helvetica, Arial, serif;
+    color: #ffffff;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.LangButton{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 100vh;
+}
+
+.MenuRowTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.CNCContainer{
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.hm_belowTitle{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font: 400 1.2rem/1.18 "Chakra Petch", Helvetica, Arial, serif;
+    color: #FFF;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.downVector {
+    cursor: pointer;
 }

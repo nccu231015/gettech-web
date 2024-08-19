@@ -125,6 +125,7 @@
   bottom: 5%;
   width: 65px;
   height: 65px;
+  cursor: pointer;
 }
 @media (max-width: 575px) {
   .imageProcessing {
@@ -246,6 +247,7 @@
   bottom: 5%;
   width: 65px;
   height: 65px;
+  cursor: pointer;
 }
 @media (max-width: 575px) {
   .imageProcessingAlt {
@@ -398,6 +400,7 @@
   bottom: 2.5%;
   width: 45px;
   height: 45px;
+  cursor: pointer;
 }
 @media (max-width: 991px) {
   .image8Aerospace {
@@ -485,6 +488,7 @@
   bottom: 2.5%;
   width: 45px;
   height: 45px;
+  cursor: pointer;
 }
 @media (max-width: 991px) {
   .image8Military {
@@ -599,6 +603,7 @@
   bottom: 2.5%;
   width: 45px;
   height: 45px;
+  cursor: pointer;
 }
 @media (max-width: 991px) {
   .image8Electronic {

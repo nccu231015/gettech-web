@@ -1,3 +1,5 @@
+@use "../utils" as *;
+
 .footerChild {
     position: absolute;
     height: 100%;
@@ -11,7 +13,7 @@
     max-height: 100%;
 }
 .getTechPrecision {
-    position: relative;
+    position: static;
 }
 .taiwanIcon {
     width: 1.5rem;
@@ -22,6 +24,7 @@
 .taoyuanTaiwan {
     position: relative;
     font-weight: 500;
+    max-width: 60vw;
 }
 .taiwanParent {
     display: flex;
@@ -33,7 +36,7 @@
 }
 .getTechPrecisionParent {
     position: absolute;
-    height: 28.38%;
+    height: auto;
     width: 89.08%;
     top: 0%;
     right: 10.92%;
@@ -45,7 +48,7 @@
     align-items: center;
     justify-content: flex-start;
     gap: 1rem;
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 .viberIcon {
     width: 1.25rem;
@@ -66,7 +69,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 .mailIcon {
     width: 1.25rem;
@@ -87,12 +90,12 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 .locationParent {
     position: absolute;
     height: 14.19%;
-    width: 100%;
+    width: 60%;
     top: 85.81%;
     right: 0%;
     bottom: 0%;
@@ -102,7 +105,7 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 .frameParent {
     position: absolute;
@@ -113,52 +116,60 @@
     bottom: 20.77%;
     left: 5.68%;
 }
-.facebookIcon {
+
+.lastLineParent {
+    display: flex;
+    flex-direction: row;
+}
+
+.SocialParent {
+    display: flex;
+    flex-direction: row;
     position: absolute;
     /* height: 11.78%;
     width: 2.77%; */
-    top: 71.87%;
-    right: 12.68%;
-    bottom: 16.35%;
-    left: 84.55%;
+    /* top: 60%; */
+    right: 0;
+    bottom: 0;
+    gap: 1rem;
+
+
+}
+
+.facebookIcon {
+    /* position: absolute; */
     max-width: 100%;
     overflow: hidden;
     max-height: 100%;
     object-fit: cover;
 }
 .lineIcon {
-    position: absolute;
-    /* height: 11.78%;
-    width: 2.77%; */
-    top: 71.87%;
-    right: 8.94%;
-    bottom: 16.35%;
-    left: 88.29%;
+    /* position: absolute; */
     max-width: 100%;
     overflow: hidden;
     max-height: 100%;
     object-fit: cover;
 }
 .phoneIcon {
-    position: absolute;
-    /* height: 11.78%;
-    width: 2.77%; */
-    top: 71.87%;
-    right: 5.2%;
-    bottom: 16.35%;
-    left: 92.03%;
+    /* position: absolute; */
     max-width: 100%;
     overflow: hidden;
     max-height: 100%;
     object-fit: cover;
 }
+
 .footer {
     width: 100%;
     position: relative;
     height: 21.219rem;
     text-align: left;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #4d4d4d;
     font-family: 'Chakra Petch';
+    margin-top: 12rem;
 }
 
+.ConInfoContainer {
+    max-width: 60vw;
+    overflow: hidden;
+}

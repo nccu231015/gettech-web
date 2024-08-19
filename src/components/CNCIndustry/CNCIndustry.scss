@@ -119,6 +119,7 @@
     bottom: 5%;
     width: 65px;
     height: 65px;
+    cursor: pointer;
   
     @include xs {
       width: 60px;
@@ -225,6 +226,7 @@
     bottom: 5%;
     width: 65px;
     height: 65px;
+    cursor: pointer;
   
     @include xs {
       width: 60px;
@@ -360,6 +362,7 @@
     bottom: 2.5%;
     width: 45px;
     height: 45px;
+    cursor: pointer;
   
     @include md {
       right: 4%;
@@ -441,6 +444,7 @@
     bottom: 2.5%;
     width: 45px;
     height: 45px;
+    cursor: pointer;
   
     @include md {
       right: 4%;
@@ -546,6 +550,7 @@
     bottom: 2.5%;
     width: 45px;
     height: 45px;
+    cursor: pointer;
   
     @include md {
       right: 4%;

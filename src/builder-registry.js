@@ -1,7 +1,5 @@
 "use client";
 import { builder, Builder } from "@builder.io/react";
-import Counter from "./components/Counter/Counter";
-import Header from "./components/Header/Header";
 import CarouselBanner from "./components/Banner/banner";
 import MachineCard from "./components/MachineCard/MachineCard";
 import MachineCardLoop from "./components/MachineCard/MachineCardLoop";
@@ -29,6 +27,8 @@ import InfoCard from "./components/InfoCard/InfoCard";
 import TitleBox from "./components/TitleBox/TitleBox";
 import TextBox from "./components/TextBox/TextBox";
 import ArticleTitle from "./components/ArticleTitle/ArticleTitle";
+import ContactUs from "./components/ContactUs/ContactUs";
+import EquipmentInfo from "./components/EquipmentInfo/EquipmentInfo";
 
 
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY);
@@ -51,10 +51,42 @@ Builder.registerComponent(CarouselBanner,{
           defaultValue:   'https://cdn.builder.io/api/v1/image/assets%2Fpwgjf0RoYWbdnJSbpBAjXNRMe9F2%2Ffb27a7c790324294af8be1c35fe30f4d',
         },
       ],
-
     }
   ]
-  
+})
+
+Builder.registerComponent(EquipmentInfo,{
+  name: 'EquipmentInfo',
+  inputs:[
+    {
+      name: 'cardList',
+      type: 'list',
+      defaultValue: [ 
+          ],
+      subFields: [
+        {
+          name: 'MainTitle',
+          type:'string',
+          defaultValue: 'VERTICAL FOUR-AXIS MILLING MACHINE',
+        },
+        {
+          name: 'brand',
+          type:'string',
+          defaultValue: 'Brother',
+        },
+        {
+          name: 'ModelNumber',
+          type:'string',
+          defaultValue: 'SPEEDOP S700X2(HIGH-Torque)',
+        },
+        {
+          name: 'Quantity',
+          type:'string',
+          defaultValue: '4',
+        },
+      ],
+    }
+  ]
 })
 
 Builder.registerComponent(MachineCard,{
@@ -132,6 +164,11 @@ Builder.registerBlock(CNCIndustry,{
   inputs:[]
 })
 
+Builder.registerBlock(ContactUs,{
+  name: 'ContactUs',
+  inputs:[]
+})
+
 Builder.registerBlock(MediumTitle,{
   name: 'MediumTitle',
   inputs:[
@@ -157,6 +194,21 @@ Builder.registerComponent(EquipmentCard,{
       allowedFileTypes: ['jpeg', 'jpg', 'png', 'svg'],
       required: true,
       defaultValue:  '/assets/four-axis1.png',
+    },
+    {
+      name: 'brand',
+      type:'string',
+      defaultValue: 'Brand Here',
+    },
+    {
+      name: 'model_number',
+      type:'string',
+      defaultValue: 'Model Number Here',
+    },
+    {
+      name: 'quantity',
+      type:'string',
+      defaultValue: 'Quantity Here',
     },
   ]
 })

@@ -51,5 +51,78 @@
     height: 28px;
     background: center center / 100% 100% no-repeat;
     background-image: url("/assets/about.png");
+    transition: background-image 0.8s ease-in-out;
     overflow: hidden;
+    cursor: pointer;
+}
+
+input {
+    display: none;
+}
+
+.detailCardContainer {
+    border-radius: 16px;
+    width: 95%;
+    height: auto;
+    background-color: #FFF;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 8% 0 8% 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0 0 20px rgb(0 0 0 / 25%));
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+input[type="checkbox"]:checked + .detailCardContainer {
+    opacity: 1;
+}
+
+input[type="checkbox"]:checked + .aboutImage {
+    background-image: url("/assets/cancel.png");
+}
+
+.redTitle {
+    background: #ac2433;
+    border-radius: 10px;
+    width: 82.35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: var(
+        --tag-box-shadow,
+        0.0625rem 0.0625rem 0.3125rem 0.0625rem rgba(0, 0, 0, 0.25)
+    );
+    font-size: 1.4rem;
+    color: #fef3f2;
+    text-align: center;
+    font-weight: 400;
+    font-family: "Chakra Petch";
+}
+
+.whiteContent {
+    border-radius: 72px;
+    width: 82.35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: var(
+        --tag-box-shadow,
+        0.0625rem 0.0625rem 0.3125rem 0.0625rem rgba(0, 0, 0, 0.25)
+    );
+    font-size: 1.4rem;
+    color: #4d4d4d;
+    text-align: center;
+    font-weight: 400;
+    font-family: "Chakra Petch";
 }

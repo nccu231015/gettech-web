@@ -1,0 +1,356 @@
+.ContactUsParent {
+  width: 100vw;
+  padding-top: 1.1vw;
+  background-image: url("/assets/wave_bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.ContactSection {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  justify-content: center;
+  position: relative;
+  margin-left: 1.1vw;
+  margin-right: 1.1vw;
+  z-index: 100;
+}
+
+.MessageForm {
+  position: relative;
+  background-image: url("/assets/rightSection_bg.svg");
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40vw;
+  height: 718px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ContactUsTitle {
+  position: relative;
+  background-image: url("/assets/polygon.svg");
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40vw;
+  height: 718px;
+}
+
+.ContactTitle {
+  color: white;
+  font: 700 88px/1.29 "Chakra Petch", Helvetica, Arial, serif;
+}
+
+.InnerInfoContainer {
+  margin-top: 6rem;
+  margin-left: 3rem;
+}
+
+.InnerTitleContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.InnerInfoTitle {
+  color: #545354;
+  font: 500 2rem/1.29 "Chakra Petch", Helvetica, Arial, serif;
+}
+
+.NationFlag {
+  width: 2rem;
+  height: 2rem;
+}
+
+.InnerInfoLocation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.LocationText {
+  color: #545354;
+  font: 500 1.5rem/1.29 "Chakra Petch", Helvetica, Arial, serif;
+  margin-left: 0.5rem;
+}
+
+.ContactInfoContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  gap: 2rem;
+}
+
+.InnerPhoneContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.PhoneNumberText {
+  color: #545354;
+  font: 500 1.5rem/1.29 "Chakra Petch", Helvetica, Arial, serif;
+  margin-left: 2rem;
+  background-color: rgba(218, 218, 218, 0.5019607843);
+  border-radius: 5px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 5rem;
+}
+
+.InnerEmailContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.EmailText {
+  color: #545354;
+  font: 500 1.5rem/1.29 "Chakra Petch", Helvetica, Arial, serif;
+  margin-left: 2rem;
+  background-color: rgba(218, 218, 218, 0.5019607843);
+  border-radius: 5px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 5rem;
+}
+
+.InnerAddressContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.AddressText {
+  color: #545354;
+  font: 500 1.5rem/1.29 "Chakra Petch", Helvetica, Arial, serif;
+  margin-left: 2rem;
+  background-color: rgba(218, 218, 218, 0.5019607843);
+  border-radius: 5px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 5rem;
+  width: 55%;
+}
+
+.FormContainer {
+  flex-grow: 1;
+  position: relative;
+  margin-left: 6rem;
+  padding-top: 4.875rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.field label {
+  display: block;
+  margin-right: 1rem;
+}
+
+.field input {
+  display: block;
+  min-width: 250px;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  background-color: rgba(218, 218, 218, 0.5019607843);
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 80%;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.field textarea {
+  display: block;
+  min-width: 250px;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  background-color: rgba(218, 218, 218, 0.5019607843);
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 80%;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.field input::-moz-placeholder {
+  color: rgba(84, 83, 84, 0.3490196078);
+}
+
+.field input::placeholder {
+  color: rgba(84, 83, 84, 0.3490196078);
+}
+
+.field textarea::-moz-placeholder {
+  color: rgba(84, 83, 84, 0.3490196078);
+}
+
+.field textarea::placeholder {
+  color: rgba(84, 83, 84, 0.3490196078);
+}
+
+#message {
+  width: 80%;
+  height: 100%;
+  box-sizing: border-box;
+  display: block;
+  overflow-y: auto;
+  word-wrap: break-word;
+  vertical-align: text-top;
+  resize: none;
+}
+
+#messageField {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-grow: 0;
+  height: 55%;
+}
+
+input[type=submit] {
+  display: block;
+  padding: 6px 30px;
+  font-size: 14px;
+  background-color: #4460AA;
+  color: #fff;
+  border: none;
+}
+
+.submitBtn {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.sendBtn {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  z-index: 10;
+}
+
+.CHG_Section {
+  margin-top: 10rem;
+}
+
+.CH-Group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.CHG_Title {
+  position: relative;
+  background-image: url("/assets/CH-Group.svg");
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 81.5vw;
+  height: 718px;
+}
+
+.CHG_Content {
+  font: 500 1.5rem "Chakra Petch", Helvetica, Arial, serif;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  text-align: center;
+  width: 62.5%;
+}
+
+.belowSectionParent {
+  display: flex;
+  justify-content: center;
+}
+
+.belowSection {
+  display: flex;
+  flex-direction: row;
+  width: 81.5vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ManufacturePhoto {
+  width: 25vw;
+  border-radius: 20px;
+}
+
+.ManufactureSection {
+  position: relative;
+}
+
+.ServiceSection {
+  position: relative;
+}
+
+.AgentSection {
+  position: relative;
+}
+
+.belowTitleParent {
+  display: flex;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100%;
+  top: 15%;
+  left: 47.5%;
+  justify-content: center;
+}
+
+.belowTitleBackground {
+  background-color: #fff;
+  text-align: center;
+  width: 70%;
+  padding: 2%;
+  border-radius: 10px;
+}
+
+.belowTitle {
+  font: 700 1.125rem "Chakra Petch", Helvetica, Arial, serif;
+  background: linear-gradient(0, #CD313F 44%, #972233 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.Hyperlink {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  right: 0%;
+  top: 50%;
+  cursor: pointer;
+}/*# sourceMappingURL=ContactUs.css.map */

@@ -230,6 +230,7 @@
   bottom: -66px;
   width: 60px;
   height: 60px;
+  cursor: pointer;
 }
 @media (max-width: 1199px) {
   .ag_additionalImage {

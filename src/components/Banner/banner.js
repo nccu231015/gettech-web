@@ -14,7 +14,7 @@ builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY);
 const CarouselBanner = ({carasoul}) => {
     return (
         <div className='CarouselParent'>
-            <Carousel showThumbs={true} autoPlay infiniteLoop className='carousel'>
+            <Carousel showThumbs={false} autoPlay infiniteLoop className='carousel'>
                 {carasoul.map((link, index) => (
                     <div key={index}>
                         <BuilderImage src={link.image} width={100} height={100}></BuilderImage>
