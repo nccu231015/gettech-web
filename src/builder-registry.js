@@ -29,13 +29,10 @@ import InfoCard from "./components/InfoCard/InfoCard";
 import TitleBox from "./components/TitleBox/TitleBox";
 import TextBox from "./components/TextBox/TextBox";
 import ArticleTitle from "./components/ArticleTitle/ArticleTitle";
-<<<<<<< Updated upstream
-=======
 import ContactUs from "./components/ContactUs/ContactUs";
 import EquipmentInfo from "./components/EquipmentInfo/EquipmentInfo";
 import NewMachineCard from "./components/NewMachineCard/NewMachineCard";
 import EquipmentTitle from "./components/EquipmentTitle/EquipmentTitle";
->>>>>>> Stashed changes
 
 
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY);
@@ -58,9 +55,10 @@ Builder.registerComponent(CarouselBanner,{
           defaultValue:   'https://cdn.builder.io/api/v1/image/assets%2Fpwgjf0RoYWbdnJSbpBAjXNRMe9F2%2Ffb27a7c790324294af8be1c35fe30f4d',
         },
       ],
+    },
+  ],
+});
 
-<<<<<<< Updated upstream
-=======
 Builder.registerComponent(EquipmentInfo,{
   name: 'EquipmentInfo',
   inputs:[
@@ -95,7 +93,6 @@ Builder.registerComponent(EquipmentInfo,{
           defaultValue: '4',
         },
       ],
->>>>>>> Stashed changes
     }
   ]
   
@@ -151,8 +148,6 @@ Builder.registerBlock(CNCIndustry,{
   inputs:[]
 })
 
-<<<<<<< Updated upstream
-=======
 Builder.registerBlock(ContactUs,{
   name: 'ContactUs',
   inputs:[]
@@ -163,7 +158,6 @@ Builder.registerBlock(EquipmentTitle,{
   inputs:[]
 })
 
->>>>>>> Stashed changes
 Builder.registerBlock(MediumTitle,{
   name: 'MediumTitle',
   inputs:[
@@ -179,19 +173,6 @@ Builder.registerComponent(EquipmentCard,{
   name: 'EquipmentCard',
   inputs:[
     {
-<<<<<<< Updated upstream
-      name: 'titleText',
-      type:'string',
-      defaultValue: 'Title Here',
-    },
-    {
-      name:'image',
-      type:'file',
-      allowedFileTypes: ['jpeg', 'jpg', 'png', 'svg'],
-      required: true,
-      defaultValue:  '/assets/four-axis1.png',
-    },
-=======
       name: 'equipmentCardList',
       type: 'list',
       defaultValue: [
@@ -231,7 +212,6 @@ Builder.registerComponent(EquipmentCard,{
         },
       ],
     }
->>>>>>> Stashed changes
   ]
 })
 
