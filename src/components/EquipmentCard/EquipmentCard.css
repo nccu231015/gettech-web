@@ -123,10 +123,6 @@
   width: 8rem;
   aspect-ratio: 93/28;
   background: center center/100% 100% no-repeat;
-<<<<<<< Updated upstream
-  background-image: url("/assets/about.png");
-  overflow: hidden;
-=======
   background-image: url("/assets/about.svg");
   transition: background-image 0.8s ease-in-out;
   overflow: hidden;
@@ -329,5 +325,4 @@ input[type=checkbox]:checked + .aboutImage {
   .whiteContent {
     font-size: 0.6rem;
   }
->>>>>>> Stashed changes
 }/*# sourceMappingURL=EquipmentCard.css.map */

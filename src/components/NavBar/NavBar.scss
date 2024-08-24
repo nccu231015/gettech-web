@@ -3,24 +3,17 @@
 .container{
     display: flex;
     justify-content: center;
-<<<<<<< Updated upstream
-    width: 100%;
-=======
     width: calc(100% - 2 * 2rem);
     margin: 0 2rem;
     @include md {
         display: contents;
     }
->>>>>>> Stashed changes
 }
 
 .group {
     display: flex;
     flex-direction: column;
     min-height: 67px;
-<<<<<<< Updated upstream
-    width: 95%;
-=======
     width: 100%;
     margin: 2rem 0rem 2rem 0rem;
     @include xl {
@@ -29,7 +22,6 @@
     @include md {
         display: none;
     }
->>>>>>> Stashed changes
 }
 
 .navBar {
@@ -104,53 +96,6 @@
     font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
     color: rgb(76 76 76);
     text-decoration: none;
-<<<<<<< Updated upstream
-}
-
-.industryText {
-    display: flex;
-    align-items: center;
-    min-width: 0;
-    font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
-    color: rgb(76 76 76);
-    text-decoration: none;
-}
-
-.equipmentText {
-    display: flex;
-    align-items: center;
-    min-width: 0;
-    font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
-    color: rgb(76 76 76);
-    text-decoration: none;
-}
-
-.aboutGetTechText {
-    display: flex;
-    align-items: center;
-    min-width: 0;
-    font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
-    color: rgb(76 76 76);
-    text-decoration: none;
-}
-
-.contactUsText {
-    display: flex;
-    align-items: center;
-    min-width: 0;
-    font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
-    color: rgb(76 76 76);
-    text-decoration: none;
-}
-
-.chGroupText {
-    display: flex;
-    align-items: center;
-    min-width: 0;
-    font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
-    color: rgb(76 76 76);
-    text-decoration: none;
-=======
     cursor: pointer;
     @include xl {
         font-size: 0.8rem;
@@ -244,5 +189,4 @@ input {
 
 .downVector {
     cursor: pointer;
->>>>>>> Stashed changes
 }
