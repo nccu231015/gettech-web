@@ -35,8 +35,7 @@ return (
             <img
             className="IFC_additionalImage"
             src={isHovered ? '/assets/HoverInfoButton.png' : '/assets/InfoButton.png'}
-            alt=""
-        />
+            alt="" />
         </div>
         
     </div>

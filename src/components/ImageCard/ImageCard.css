@@ -54,6 +54,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .IC_machineCard .IC_machineImage {

@@ -1,19 +1,62 @@
+.equipmentCardParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+.equipmentCardContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0;
+}
+@media (max-width: 1440px) {
+  .equipmentCardContainer {
+    gap: 1rem;
+  }
+}
+@media (max-width: 991px) {
+  .equipmentCardContainer {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+}
+
 .equipmentCard {
-  height: 35rem;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  gap: 20px 0;
+  gap: 1rem;
+  width: calc((100% - 4rem) / 3);
+  margin-bottom: 1rem;
+}
+@media (max-width: 1440px) {
+  .equipmentCard {
+    width: calc((100% - 2rem) / 3);
+  }
+}
+@media (max-width: 991px) {
+  .equipmentCard {
+    width: 60.5vw;
+    flex: 0 0 auto;
+  }
 }
 
 .titleContainer {
   width: 100%;
-  height: 4rem;
   display: flex;
   flex-direction: column;
-  background: center center/100% 100% no-repeat;
-  background-image: url("/assets/card_backgroundImage.png");
+  background: linear-gradient(0, #CD313F 44%, #972233 100%);
   border-radius: 10px;
+  padding: 0.5rem 0;
+}
+@media (max-width: 1440px) {
+  .titleContainer {
+    padding: 2px 0;
+  }
 }
 
 .titleText {
@@ -24,22 +67,51 @@
   font: 500 2rem/1.5 "Chakra Petch", Helvetica, Arial, serif;
   color: rgb(254, 243, 242);
   text-align: center;
+  text-wrap: wrap;
+}
+@media (max-width: 1440px) {
+  .titleText {
+    font-size: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .titleText {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 575px) {
+  .titleText {
+    font-size: 24px;
+  }
+}
+@media (max-width: 479px) {
+  .titleText {
+    font-size: 20px;
+  }
+}
+@media (max-width: 383px) {
+  .titleText {
+    font-size: 16px;
+  }
 }
 
 .cardImageContainer {
-  height: 504px;
+  height: auto;
   position: relative;
   display: flex;
   flex-direction: column;
+  border-radius: 16px;
   margin: 0 1px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 .cardImage {
   position: relative;
   width: 100%;
-  height: 100%;
+  aspect-ratio: 1/1;
   border-radius: 16px;
-  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -48,9 +120,214 @@
   position: absolute;
   right: 1rem;
   bottom: 1rem;
-  width: 93px;
-  height: 28px;
+  width: 8rem;
+  aspect-ratio: 93/28;
   background: center center/100% 100% no-repeat;
+<<<<<<< Updated upstream
   background-image: url("/assets/about.png");
   overflow: hidden;
+=======
+  background-image: url("/assets/about.svg");
+  transition: background-image 0.8s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+}
+@media (max-width: 1440px) {
+  .aboutImage {
+    width: 6rem;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .aboutImage {
+    width: 5rem;
+  }
+}
+@media (max-width: 991px) {
+  .aboutImage {
+    width: 8rem;
+  }
+}
+@media (max-width: 767px) {
+  .aboutImage {
+    width: 6rem;
+  }
+}
+@media (max-width: 479px) {
+  .aboutImage {
+    width: 4.5rem;
+  }
+}
+@media (max-width: 383px) {
+  .aboutImage {
+    width: 3.8rem;
+  }
+}
+
+input {
+  display: none;
+}
+
+.detailCardContainer {
+  border-radius: 16px;
+  width: 90%;
+  height: 50%;
+  background-color: #FFF;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 8% 0 8% 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+@media (max-width: 1440px) {
+  .detailCardContainer {
+    gap: 0.7rem;
+  }
+}
+@media (max-width: 991px) {
+  .detailCardContainer {
+    gap: 1.2rem;
+  }
+}
+@media (max-width: 767px) {
+  .detailCardContainer {
+    gap: 0.7rem;
+  }
+}
+@media (max-width: 383px) {
+  .detailCardContainer {
+    gap: 0.5rem;
+  }
+}
+
+input[type=checkbox]:checked + .detailCardContainer {
+  opacity: 1;
+}
+
+input[type=checkbox]:checked + .aboutImage {
+  background-image: url("/assets/cancel.svg");
+}
+
+.redTitle {
+  background: #ac2433;
+  border-radius: 10px;
+  width: 82.35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  box-shadow: var(--tag-box-shadow, 0.0625rem 0.0625rem 0.3125rem 0.0625rem rgba(0, 0, 0, 0.25));
+  font-size: 1.4rem;
+  color: #fef3f2;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Chakra Petch";
+  padding: 0.4rem 0;
+}
+@media (max-width: 1440px) {
+  .redTitle {
+    padding: 0.2rem 0;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .redTitle {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 991px) {
+  .redTitle {
+    padding: 0.4rem 0;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 767px) {
+  .redTitle {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 575px) {
+  .redTitle {
+    padding: 0.2rem 0;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 479px) {
+  .redTitle {
+    width: 80%;
+    padding: 0.1rem 0;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 383px) {
+  .redTitle {
+    padding: 0;
+    font-size: 0.6rem;
+  }
+}
+
+.whiteContent {
+  border-radius: 72px;
+  width: 82.35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  box-shadow: var(--tag-box-shadow, 0.0625rem 0.0625rem 0.3125rem 0.0625rem rgba(0, 0, 0, 0.25));
+  font-size: 1.4rem;
+  color: #4d4d4d;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Chakra Petch";
+  padding: 0.4rem 0;
+}
+@media (max-width: 1440px) {
+  .whiteContent {
+    padding: 0.2rem 0;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .whiteContent {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 991px) {
+  .whiteContent {
+    padding: 0.4rem 0;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 767px) {
+  .whiteContent {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 575px) {
+  .whiteContent {
+    padding: 0.2rem 0;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 479px) {
+  .whiteContent {
+    width: 80%;
+    padding: 0.1rem 0;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 383px) {
+  .whiteContent {
+    font-size: 0.6rem;
+  }
+>>>>>>> Stashed changes
 }/*# sourceMappingURL=EquipmentCard.css.map */

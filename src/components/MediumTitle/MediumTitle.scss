@@ -7,7 +7,11 @@
     background-image: url("/assets/MediumTitle_backgroundImg.png");
     border-radius: 20px 20px 0 0;
     filter: drop-shadow(1px 1px 5px rgb(0 0 0 / 25%));
-    margin:60px 0px 30px 0px ;
+    margin:30px 2rem 30px 2rem ;
+
+    @include md {
+        margin: 30px 1rem 30px 1rem;
+    }
 }
 
 .text {
@@ -17,4 +21,21 @@
     font: 700 48px/1.29 "Chakra Petch", Helvetica, Arial, serif;
     color: rgb(254 243 242);
     text-align: center;
+    
+    @include xl {
+        font-size: 40px;
+    }
+
+    @include xs {
+        font-size: 34px;
+    }
+
+    @include xxs {
+        font-size: 26px;
+    }
+
+    @include tn {
+        font-size: 20px;
+    }
+
 }

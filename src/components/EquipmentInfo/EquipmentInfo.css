@@ -1,0 +1,78 @@
+.EquipmentInfoCardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+.EquipmentInfoCardInnerContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0;
+}
+
+.EquipmentInfoCard {
+  width: calc((100% - 2 * 1.5rem) / 3);
+  box-shadow: var(
+    --tag-box-shadow,
+    0.0625rem 0.0625rem 0.3125rem 0.0625rem rgba(131, 82, 82, 0.25)
+  );
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1023px) {
+  .EquipmentInfoCard {
+    width: 100%;
+  }
+}
+
+.CardSubtitle {
+  font: 500 1rem/1.29 "Chakra Petch", Helvetica, Arial, serif;
+  color: #AC2433;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  align-self: flex-start;
+}
+
+.InfoContentParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.CardMainTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 700 1rem/1.29 "Chakra Petch", Helvetica, Arial, serif;
+  color: #4D4D4D;
+  text-align: center;
+  background-color: #FCE9E7;
+  padding: 1.5rem;
+}
+
+.CardInfoContent {
+  width: 90%;
+  font: 500 1rem/1.29 "Chakra Petch", Helvetica, Arial, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4D4D4D;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  box-shadow: var(
+    --tag-box-shadow,
+    0.0625rem 0.0625rem 0.3125rem 0.0625rem rgba(0, 0, 0, 0.25)
+  );
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 992px) {
+  .EquipmentInfoCardContainer {
+    margin: 0 1rem;
+  }
+}

@@ -130,6 +130,11 @@
     margin-left: unset;
     width: 100%;
   }
+
+  @include md {
+    margin-top: 2rem;
+  }
+
 }
 
 .aboutSubTitle {
@@ -223,5 +228,11 @@
 
   @include xxs {
     min-height: 10px;
+  }
+}
+
+#secondHorizon  {
+  @include md {
+    margin-top: 2rem;
   }
 }

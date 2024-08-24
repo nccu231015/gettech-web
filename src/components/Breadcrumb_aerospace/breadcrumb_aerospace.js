@@ -14,7 +14,7 @@ export default function breadcrumb_aerospace(){
     return(
             <ul className="breadcrumb">
                 <li><a href="/">HOME</a></li>
-                <li><a href="/">CNC EXPERT</a></li>
+                <li><a href="/">INDUSTRY</a></li>
                 <li>AEROSPACE</li>
             </ul>
     )

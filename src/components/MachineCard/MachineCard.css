@@ -12,8 +12,8 @@
   /* flex-wrap: wrap; */
 }
 .mc_machineCard {
-  border-radius: 1.25rem;
-  padding: 1.125rem 1.25rem 1.125rem 1.25rem;
+  /* border-radius: 1.25rem; */
+  /* padding: 1.125rem 1.25rem 1.125rem 1.25rem; */
   display: flex;
   flex-direction: row;
   gap: 0.625rem;
@@ -67,8 +67,8 @@
 .mc_machineCard .mc_machineImage {
   border-radius: 0.625rem;
   flex-shrink: 0;
-  width: 11.9375rem;
-  height: 11.1875rem;
+  width: clamp(40vw,190px,24vw);
+  height: clamp(40vw,190px,24vw);
   position: relative;
   box-shadow: var(
     --card-box-shadow,

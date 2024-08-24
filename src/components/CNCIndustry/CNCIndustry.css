@@ -4,6 +4,8 @@
   background: center center/100% 100% no-repeat;
   background-image: url("/assets/CNCIndustry_background.png");
   border-radius: 20px;
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 .industryOverviewSection .overlay {
@@ -30,112 +32,121 @@
 .flexColGroup {
   display: flex;
   flex-direction: column;
-  gap: 174px 0;
-  margin: 50px 37px 105px 35px;
+  width: 100%;
+  height: 100%;
+  gap: 8rem 0;
 }
 
 .flexRowGroup {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  gap: 0 24px;
+  align-items: stretch;
+  height: auto;
 }
-@media (max-width: 1399px) {
+@media (max-width: 991px) {
   .flexRowGroup {
     flex-direction: column;
-    gap: 8px 24px;
+    justify-content: center;
   }
 }
 
 .imageMachinery {
-  width: 46.8%;
-  min-width: 0;
+  width: 46.8vw;
   filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+  padding-top: 1.25rem;
 }
-@media (max-width: 1399px) {
+@media (max-width: 991px) {
   .imageMachinery {
-    margin-top: unset;
-    margin-bottom: unset;
-    width: 100%;
+    width: calc(100vw - 4rem);
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .imageMachinery {
+    width: calc(100vw - 2rem);
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 479px) {
+  .imageMachinery {
+    width: calc(100vw - 1rem);
+    padding: 0 0.5rem;
   }
 }
 
-.flexColBox {
+.rightColBox {
   display: flex;
   flex-direction: column;
-  place-content: stretch space-evenly;
-  gap: 20px 0;
-  width: 46.8%;
-  min-width: 0;
+  justify-content: space-between;
+  width: 46.8vw;
+  margin: 3rem 1.5rem 2rem 1.5rem;
 }
-@media (max-width: 1399px) {
-  .flexColBox {
-    width: 100%;
+@media (max-width: 1440px) {
+  .rightColBox {
+    margin: 2rem 1.5rem 1rem 1.5rem;
+  }
+}
+@media (max-width: 991px) {
+  .rightColBox {
+    width: calc(100vw - 4rem);
+    padding: 0 2rem;
+    aspect-ratio: 927/1041.25;
+  }
+}
+@media (max-width: 767px) {
+  .rightColBox {
+    width: calc(100vw - 2rem);
+    padding: 0 1rem;
+    aspect-ratio: 927/1041.25;
+  }
+}
+@media (max-width: 767px) {
+  .rightColBox {
+    width: calc(100vw - 0.6rem);
+    padding: 0 0.3rem;
+    aspect-ratio: 927/1041.25;
   }
 }
 
 .imageContainer {
   position: relative;
-  min-height: 29.5rem;
+  width: 100%;
+  height: 47.5%;
   background: center center/100% 100% no-repeat;
   background-image: url("/assets/MillingMachine_Img.png");
   border-radius: 16px;
   filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
-  overflow: hidden;
-}
-@media (max-width: 1399px) {
-  .imageContainer {
-    min-height: 42rem;
-  }
-}
-@media (max-width: 1199px) {
-  .imageContainer {
-    min-height: 38rem;
-  }
 }
 @media (max-width: 991px) {
   .imageContainer {
-    min-height: 25rem;
-  }
-}
-@media (max-width: 767px) {
-  .imageContainer {
-    min-height: 22rem;
-  }
-}
-@media (max-width: 575px) {
-  .imageContainer {
-    min-height: 20rem;
-  }
-}
-@media (max-width: 479px) {
-  .imageContainer {
-    min-height: 14rem;
-  }
-}
-@media (max-width: 383px) {
-  .imageContainer {
-    min-height: 13rem;
+    width: calc(100% - 3rem);
+    height: 47.5%;
   }
 }
 
+<<<<<<< Updated upstream
 .imageProcessing {
   position: absolute;
   right: 2.5%;
   bottom: 5%;
   width: 65px;
   height: 65px;
+=======
+.imageContainer2 {
+  position: relative;
+  width: 100%;
+  height: 47.5%;
+  background: center center/100% 100% no-repeat;
+  background-image: url("/assets/CarMilling_Img.png");
+  border-radius: 16px;
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+>>>>>>> Stashed changes
 }
-@media (max-width: 575px) {
-  .imageProcessing {
-    width: 60px;
-    height: 60px;
-  }
-}
-@media (max-width: 479px) {
-  .imageProcessing {
-    width: 55px;
-    height: 55px;
+@media (max-width: 991px) {
+  .imageContainer2 {
+    width: calc(100% - 3rem);
+    height: 47.5%;
   }
 }
 
@@ -147,15 +158,61 @@
   flex-direction: column;
   width: 50%;
   height: 35px;
-  background: center center/100% 100% no-repeat;
-  background-image: url("/assets/Title_Background.png");
+  background: linear-gradient(0, #CD313F 44%, #972233 100%);
   border-radius: 10px;
   filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.25));
 }
-@media (max-width: 1399px) {
+@media (max-width: 991px) {
   .titleMillingMachine {
     width: 95%;
-    height: 15%;
+    border-radius: 2px;
+    padding: 0.5rem 0;
+  }
+}
+@media (max-width: 575px) {
+  .titleMillingMachine {
+    top: 7.5%;
+    left: 5%;
+    width: 90%;
+  }
+}
+@media (max-width: 479px) {
+  .titleMillingMachine {
+    top: 5%;
+    padding: 0;
+  }
+}
+
+.flexColBox3 {
+  position: absolute;
+  top: 5%;
+  left: 2.5%;
+  display: flex;
+  flex-direction: column;
+  width: 82%;
+  height: 35px;
+  background: linear-gradient(0, #CD313F 44%, #972233 100%);
+  border-radius: 10px;
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.25));
+}
+@media (max-width: 991px) {
+  .flexColBox3 {
+    width: 95%;
+    border-radius: 2px;
+    padding: 0.5rem 0;
+  }
+}
+@media (max-width: 575px) {
+  .flexColBox3 {
+    top: 7.5%;
+    left: 5%;
+    width: 90%;
+  }
+}
+@media (max-width: 479px) {
+  .flexColBox3 {
+    top: 5%;
+    padding: 0;
   }
 }
 
@@ -168,26 +225,26 @@
   font: 500 24px/1.29 "Chakra Petch", Helvetica, Arial, serif;
   color: rgb(252, 233, 231);
   text-align: center;
+  text-wrap: nowrap;
 }
-@media (max-width: 1399px) {
+@media (max-width: 1440px) {
   .medium_title {
-    align-items: center;
-    font-size: 48px;
+    font-size: 20px;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 991px) {
   .medium_title {
-    font-size: 46px;
+    font-size: 24px;
   }
 }
 @media (max-width: 767px) {
   .medium_title {
-    font-size: 34px;
+    font-size: 22px;
   }
 }
 @media (max-width: 575px) {
   .medium_title {
-    font-size: 32px;
+    font-size: 20px;
   }
 }
 @media (max-width: 479px) {
@@ -195,136 +252,41 @@
     font-size: 18px;
   }
 }
-
-.flexColBox2 {
-  position: relative;
-  min-height: 29.5rem;
-  background: center center/100% 100% no-repeat;
-  background-image: url("/assets/CarMilling_Img.png");
-  border-radius: 16px;
-  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
-}
-@media (max-width: 1399px) {
-  .flexColBox2 {
-    min-height: 42rem;
-  }
-}
-@media (max-width: 1199px) {
-  .flexColBox2 {
-    min-height: 38rem;
-  }
-}
-@media (max-width: 991px) {
-  .flexColBox2 {
-    min-height: 25rem;
-  }
-}
-@media (max-width: 767px) {
-  .flexColBox2 {
-    min-height: 22rem;
-  }
-}
-@media (max-width: 575px) {
-  .flexColBox2 {
-    min-height: 20rem;
-  }
-}
-@media (max-width: 479px) {
-  .flexColBox2 {
-    min-height: 14rem;
-  }
-}
 @media (max-width: 383px) {
-  .flexColBox2 {
-    min-height: 13rem;
+  .medium_title {
+    font-size: 15px;
   }
 }
 
-.imageProcessingAlt {
+.imageProcessing {
   position: absolute;
   right: 2.5%;
   bottom: 5%;
   width: 65px;
   height: 65px;
 }
-@media (max-width: 575px) {
-  .imageProcessingAlt {
+@media (max-width: 1440px) {
+  .imageProcessing {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .imageProcessing {
     width: 60px;
     height: 60px;
   }
 }
 @media (max-width: 479px) {
-  .imageProcessingAlt {
-    width: 55px;
-    height: 55px;
-  }
-}
-
-.flexColBox3 {
-  position: absolute;
-  top: 5%;
-  left: 2.5%;
-  display: flex;
-  flex-direction: column;
-  width: 82%;
-  height: 35px;
-  background: center center/100% 100% no-repeat;
-  background-image: url("/assets/Title_Background.png");
-  border-radius: 10px;
-  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.25));
-  overflow: hidden;
-}
-@media (max-width: 1399px) {
-  .flexColBox3 {
-    width: 95%;
-    height: 15%;
-  }
-}
-
-.titleCarMilling {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  font: 600 24px/1.29 "Chakra Petch", Helvetica, Arial, serif;
-  color: rgb(252, 233, 231);
-  text-align: center;
-}
-@media (max-width: 1399px) {
-  .titleCarMilling {
-    align-items: center;
-    font-size: 48px;
-  }
-}
-@media (max-width: 1199px) {
-  .titleCarMilling {
-    font-size: 46px;
-  }
-}
-@media (max-width: 991px) {
-  .titleCarMilling {
-    font-size: 32px;
-  }
-}
-@media (max-width: 767px) {
-  .titleCarMilling {
-    font-size: 28px;
-  }
-}
-@media (max-width: 575px) {
-  .titleCarMilling {
-    font-size: 24px;
-  }
-}
-@media (max-width: 479px) {
-  .titleCarMilling {
-    font-size: 16px;
+  .imageProcessing {
+    width: 50px;
+    height: 50px;
   }
 }
 @media (max-width: 383px) {
-  .titleCarMilling {
-    font-size: 14px;
+  .imageProcessing {
+    width: 45px;
+    height: 45px;
   }
 }
 
@@ -332,22 +294,37 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 48px 0;
-  margin: 0 0 0 2px;
+  gap: 30px 0;
+  margin: 0 4rem 8rem 4rem;
+}
+@media (max-width: 1440px) {
+  .flexColGroup2 {
+    margin: 0 0 8rem 0;
+  }
 }
 
 .heroTitleIndustry {
-  font: 700 88px/1.29 "Chakra Petch", Helvetica, Arial, serif;
+  margin-left: 1rem;
+  font: 700 76px/1.29 "Chakra Petch", Helvetica, Arial, serif;
   color: rgb(254, 243, 242);
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.25));
+}
+@media (max-width: 991px) {
+  .heroTitleIndustry {
+    align-items: flex-start;
+    font-size: 108px;
+    margin-left: 4rem;
+  }
 }
 @media (max-width: 767px) {
   .heroTitleIndustry {
-    align-items: flex-start;
+    margin-left: 2rem;
     font-size: 80px;
   }
 }
 @media (max-width: 575px) {
   .heroTitleIndustry {
+    margin-left: 1rem;
     font-size: 74px;
   }
 }
@@ -356,97 +333,252 @@
     font-size: 60px;
   }
 }
+@media (max-width: 383px) {
+  .heroTitleIndustry {
+    font-size: 56px;
+  }
+}
 
 .flexRowGroup1 {
   display: flex;
-  justify-content: space-evenly;
-  gap: 0 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0 2rem;
 }
-@media (min-width: 1920px) and (max-width: 2999px) {
+@media (max-width: 1440px) {
   .flexRowGroup1 {
-    -moz-column-gap: 8px;
-         column-gap: 8px;
+    gap: 0 1rem;
   }
 }
-@media (max-width: 1399px) {
+@media (max-width: 991px) {
   .flexRowGroup1 {
-    flex-wrap: wrap;
-    -moz-column-gap: 8px;
-         column-gap: 8px;
+    display: none;
+    gap: 0 2rem;
+  }
+}
+
+.mdAltGroup {
+  display: none;
+}
+@media (max-width: 991px) {
+  .mdAltGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+@media (max-width: 575px) {
+  .mdAltGroup {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  #groupCustomize {
+    padding-top: 0;
+  }
+}
+
+.mdAltRightCol {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media (max-width: 575px) {
+  .mdAltRightCol {
+    gap: 1rem;
+  }
+}
+
+.mdAltLeftCol {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media (max-width: 575px) {
+  .mdAltLeftCol {
+    gap: 1rem;
   }
 }
 
 .imagePairGroupAerospace {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  margin: 0 0 118px;
-  width: 22.8%;
-  min-width: 0;
+  width: calc((100vw - 6rem - 8rem) / 4);
+}
+@media (max-width: 1440px) {
+  .imagePairGroupAerospace {
+    width: calc((100vw - 5rem) / 4);
+  }
+}
+@media (max-width: 991px) {
+  .imagePairGroupAerospace {
+    width: calc((100vw - 8rem - 2rem) / 2);
+  }
+}
+@media (max-width: 767px) {
+  .imagePairGroupAerospace {
+    width: calc((100vw - 4rem - 2rem) / 2);
+  }
+}
+@media (max-width: 575px) {
+  .imagePairGroupAerospace {
+    width: calc((100vw - 2rem - 1rem) / 2);
+  }
+}
+
+.imagePairGroupMilitary {
+  position: relative;
+  width: calc((100vw - 6rem - 8rem) / 4);
+  padding-top: 7rem;
+}
+@media (max-width: 1440px) {
+  .imagePairGroupMilitary {
+    width: calc((100vw - 5rem) / 4);
+  }
+}
+@media (max-width: 991px) {
+  .imagePairGroupMilitary {
+    width: calc((100vw - 8rem - 2rem) / 2);
+  }
+}
+@media (max-width: 767px) {
+  .imagePairGroupMilitary {
+    width: calc((100vw - 4rem - 2rem) / 2);
+  }
+}
+@media (max-width: 575px) {
+  .imagePairGroupMilitary {
+    width: calc((100vw - 2rem - 1rem) / 2);
+  }
 }
 
 .coverImageAerospace {
   position: relative;
   width: 100%;
+  aspect-ratio: 326/371;
   border-radius: 16px;
   filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
 }
 
-.image8Aerospace {
+.imageAerospace {
   position: absolute;
+<<<<<<< Updated upstream
   right: 2.5%;
   bottom: 2.5%;
   width: 45px;
   height: 45px;
+=======
+  left: 90%;
+  bottom: 18%;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+>>>>>>> Stashed changes
+}
+@media (max-width: 1440px) {
+  .imageAerospace {
+    left: 87.5%;
+    bottom: 27.5%;
+    width: 45px;
+    height: 45px;
+  }
 }
 @media (max-width: 991px) {
-  .image8Aerospace {
+  .imageAerospace {
     right: 4%;
-    bottom: 4%;
+    bottom: 0%;
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .imageAerospace {
+    width: 55px;
+    height: 55px;
+  }
+}
+@media (max-width: 575px) {
+  .imageAerospace {
     width: 40px;
     height: 40px;
   }
 }
-@media (max-width: 767px) {
-  .image8Aerospace {
+@media (max-width: 383px) {
+  .imageAerospace {
+    left: 85%;
     width: 35px;
     height: 35px;
   }
 }
+
+.imageMilitary {
+  position: absolute;
+  left: 90%;
+  bottom: calc(18% - 7rem);
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+@media (max-width: 1440px) {
+  .imageMilitary {
+    left: 87.5%;
+    bottom: calc(27.5% - 7rem);
+    width: 45px;
+    height: 45px;
+  }
+}
+@media (max-width: 991px) {
+  .imageMilitary {
+    right: 4%;
+    bottom: 0%;
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .imageMilitary {
+    width: 55px;
+    height: 55px;
+  }
+}
 @media (max-width: 575px) {
-  .image8Aerospace {
-    width: 30px;
-    height: 30px;
+  .imageMilitary {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 383px) {
+  .imageMilitary {
+    left: 85%;
+    width: 35px;
+    height: 35px;
   }
 }
 
-.contentBoxAerospace {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-  height: 10%;
-  background: center center/100% 100% no-repeat;
-  background-image: url("/assets/Title_Background.png");
-  border-radius: 10px;
-  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.25));
-}
-
 .titleAerospace {
+  position: absolute;
+  top: 4%;
+  right: 5%;
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
-  margin: auto;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  border-radius: 10px;
+  background: linear-gradient(0, #CD313F 44%, #972233 100%);
   font: 500 24px/1.29 "Chakra Petch", Helvetica, Arial, serif;
   color: rgb(254, 243, 242);
+  padding: 2px 0;
 }
-@media (max-width: 1199px) {
+@media (max-width: 1440px) {
+  .titleAerospace {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1024px) {
   .titleAerospace {
     align-items: center;
     font-size: 20px;
@@ -454,22 +586,94 @@
 }
 @media (max-width: 991px) {
   .titleAerospace {
-    font-size: 18px;
+    font-size: 32px;
+    border-radius: 2px;
   }
 }
 @media (max-width: 767px) {
   .titleAerospace {
-    font-size: 12px;
+    font-size: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .titleAerospace {
+    font-size: 26px;
+    width: 85%;
+    right: 7.5%;
+    top: 6%;
+  }
+}
+@media (max-width: 479px) {
+  .titleAerospace {
+    font-size: 24px;
+  }
+}
+@media (max-width: 383px) {
+  .titleAerospace {
+    font-size: 20px;
   }
 }
 
-.imagePairGroupMilitary {
-  position: relative;
+.titleMilitary {
+  position: absolute;
+  top: calc(4% + 7rem);
+  right: 5%;
   display: flex;
-  flex-direction: column;
-  margin: 118px 0 0;
-  width: 22.8%;
-  min-width: 0;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 90%;
+  border-radius: 10px;
+  background: linear-gradient(0, #CD313F 44%, #972233 100%);
+  font: 500 24px/1.29 "Chakra Petch", Helvetica, Arial, serif;
+  color: rgb(254, 243, 242);
+  padding: 2px 0;
+}
+@media (max-width: 1440px) {
+  .titleMilitary {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .titleMilitary {
+    align-items: center;
+    font-size: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .titleMilitary {
+    font-size: 32px;
+    border-radius: 2px;
+  }
+}
+@media (max-width: 767px) {
+  .titleMilitary {
+    font-size: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .titleMilitary {
+    font-size: 26px;
+    width: 85%;
+    right: 7.5%;
+    top: calc(6% + 6.5rem);
+  }
+}
+@media (max-width: 383px) {
+  .titleMilitary {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  #altCustomizeTitle {
+    top: 4%;
+  }
+}
+@media (max-width: 575px) {
+  #altCustomizeTitle {
+    top: 6%;
+  }
 }
 
 .coverImageMilitary {
@@ -521,34 +725,6 @@
   filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.25));
 }
 
-.titleMilitary {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2px auto;
-  width: 100%;
-  height: 100%;
-  font: 500 24px/1.29 "Chakra Petch", Helvetica, Arial, serif;
-  color: rgb(254, 243, 242);
-  text-align: center;
-}
-@media (max-width: 1199px) {
-  .titleMilitary {
-    align-items: center;
-    font-size: 20px;
-  }
-}
-@media (max-width: 991px) {
-  .titleMilitary {
-    font-size: 18px;
-  }
-}
-@media (max-width: 767px) {
-  .titleMilitary {
-    font-size: 12px;
-  }
-}
-
 .titleCustomize {
   display: flex;
   justify-content: center;
@@ -560,7 +736,7 @@
   color: rgb(254, 243, 242);
   text-align: center;
 }
-@media (max-width: 1199px) {
+@media (max-width: 1024px) {
   .titleCustomize {
     align-items: center;
     font-size: 20px;
@@ -646,7 +822,7 @@
   color: rgb(254, 243, 242);
   text-align: center;
 }
-@media (max-width: 1199px) {
+@media (max-width: 1024px) {
   .titleElectronic {
     align-items: center;
     font-size: 20px;

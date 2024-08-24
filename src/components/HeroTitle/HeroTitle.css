@@ -4,6 +4,12 @@
   background: center center/100% 100% no-repeat;
   background-image: url("/assets/HeroTitle_backgroundImg.png");
   position: relative;
+  margin: 0 2rem;
+}
+@media (max-width: 991px) {
+  .mainHeroSection {
+    margin: 0 1rem;
+  }
 }
 .mainHeroSection .overlay {
   content: "";
@@ -42,7 +48,7 @@
   color: rgb(254, 243, 242);
   text-align: center;
 }
-@media (max-width: 1199px) {
+@media (max-width: 1024px) {
   .heroTitleCncExpert {
     font-size: 76px;
   }
@@ -81,7 +87,7 @@
   color: rgb(254, 243, 242);
   text-align: center;
 }
-@media (max-width: 1199px) {
+@media (max-width: 1024px) {
   .heroTitleMillingMachine {
     font-size: 40px;
   }

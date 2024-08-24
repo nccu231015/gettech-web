@@ -1,0 +1,68 @@
+@use "../utils" as *;
+
+.mainEquipmentTitleSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8rem;
+    padding: 0 2rem;
+
+    @include md {
+        padding: 0 1rem;
+    }
+}
+
+.EquipmentTitle {
+    font: 700 108px/1.29 "Chakra Petch", Helvetica, Arial, serif;
+    color: #CD313F;
+    filter: drop-shadow(1px 1px 5px rgb(0 0 0 / 25%));
+
+    @include xl {
+        font-size: 96px;
+    }
+
+
+    @include md {
+        font-size: 96px;
+    }
+
+    @include sm {
+        font-size: 80px;
+    }
+
+    @include xs {
+        font-size: 70px;
+    }
+
+    @include xxs {
+        font-size: 55px;
+    }
+
+    @include tn {
+        font-size: 40px;
+    }
+}
+
+.EquipmentAllButton {
+    width: 9rem;
+    padding-right: 0.5rem;
+    aspect-ratio: 158 / 75;
+    cursor: pointer;
+
+    @include xl {
+        width: 8rem;
+    }
+
+    @include xs {
+        width: 6rem;
+    }
+
+    @include xxs {
+        width: 4rem;
+    }
+
+    @include tn {
+        width: 3rem;
+    }
+}

@@ -1,6 +1,12 @@
 .container {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   margin: 2rem 0 2rem 0;
+}
+@media (max-width: 991px) {
+  .container {
+    width: 100%;
+  }
 }/*# sourceMappingURL=Arrow.css.map */

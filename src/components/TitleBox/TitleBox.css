@@ -1,7 +1,7 @@
 .TitleBox {
   background: #ac2433;
   border-radius: 10px;
-  width: 100%;
+  width: calc(100% - 4rem);
   height: 40px;
   display: flex;
   align-items: center;
@@ -17,4 +17,14 @@
   text-align: center;
   font-weight: 500;
   font-family: "Chakra Petch";
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .TitleBox {
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }

@@ -3,14 +3,33 @@
 .container{
     display: flex;
     justify-content: center;
+<<<<<<< Updated upstream
     width: 100%;
+=======
+    width: calc(100% - 2 * 2rem);
+    margin: 0 2rem;
+    @include md {
+        display: contents;
+    }
+>>>>>>> Stashed changes
 }
 
 .group {
     display: flex;
     flex-direction: column;
     min-height: 67px;
+<<<<<<< Updated upstream
     width: 95%;
+=======
+    width: 100%;
+    margin: 2rem 0rem 2rem 0rem;
+    @include xl {
+        margin: 2rem 0rem 1rem 0rem;
+    }
+    @include md {
+        display: none;
+    }
+>>>>>>> Stashed changes
 }
 
 .navBar {
@@ -21,7 +40,7 @@
     border-radius: 10px;
     filter: drop-shadow(1px 1px 5px rgb(0 0 0 / 25%));
 
-    @include lg {
+    @include md {
         display: none;
     }
 }
@@ -42,14 +61,18 @@
     border-radius: 17px;
     padding: 6.5px 16px;
     border-style: none;
+    @include xl {
+        font-size: 0.9rem;
+        width: 90px;
+    }
 }
 
 .NavflexRowContainer {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center;
-    gap: 0 10px;
+    gap: 0 2rem;
     margin: 0 337px 0 0;
     width: 1032px;
     height: 67px;
@@ -58,6 +81,7 @@
 .NavcompanyImage {
     width: 206px;
     min-width: 0;
+    cursor: pointer;
 }
 
 .highlightTextRow {
@@ -66,6 +90,11 @@
     gap: 0 10px;
     width: 766px;
     min-width: 0;
+    @include xl {
+        width: 65vw;
+        gap: 1.5rem;
+        justify-content: flex-start;
+    }
 }
 
 .cncExpertText {
@@ -75,6 +104,7 @@
     font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
     color: rgb(76 76 76);
     text-decoration: none;
+<<<<<<< Updated upstream
 }
 
 .industryText {
@@ -120,4 +150,99 @@
     font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
     color: rgb(76 76 76);
     text-decoration: none;
+=======
+    cursor: pointer;
+    @include xl {
+        font-size: 0.8rem;
+    }
+}
+
+.MenuContainer {
+    display: none;
+    padding: 0;
+    margin: 0;
+    @include md {
+        display: contents;
+    }
+}
+
+.MenuRowContainer {
+    display: flex;
+    padding-top: 2rem;
+    width: 100%;
+    background-color: #AC2433;
+    justify-content: space-between;
+}
+
+.MenuButton {
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.MenuPhone{
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.abc{
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    display: none;
+}
+
+.overlayMenu {
+    position: relative;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #AC2433;
+    z-index: 1000;
+    padding-top: 2rem;
+}
+
+.hm_CNCexpert{
+    font: 600 2rem/1.18 "Chakra Petch", Helvetica, Arial, serif;
+    color: #ffffff;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.LangButton{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 100vh;
+}
+
+.MenuRowTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.CNCContainer{
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.hm_belowTitle{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font: 400 1.2rem/1.18 "Chakra Petch", Helvetica, Arial, serif;
+    color: #FFF;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.downVector {
+    cursor: pointer;
+>>>>>>> Stashed changes
 }

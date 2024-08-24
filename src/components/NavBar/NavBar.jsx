@@ -26,11 +26,11 @@ export default function NavBar(){
                         <img className='NavcompanyImage' src={'/assets/GetTech.svg'} alt="GetTechLogo" />
                         <div className='highlightTextRow'>
                             <p className='cncExpertText' onClick={() => handleScrollTo("CNCexpert")}>CNC EXPERT</p>
-                            <p className='industryText' onClick={() => handleScrollTo("Industry")}>INDUSTRY</p>
-                            <p className='equipmentText'>EQUIPMENT</p>
-                            <p className='aboutGetTechText' onClick={() => handleScrollTo("AboutGETTECH")}>ABOUT GET-TECH</p>
-                            <p className='contactUsText'>CONTACT US</p>
-                            <p className='chGroupText'>CH-GROUP</p>
+                            <p className='cncExpertText' onClick={() => handleScrollTo("Industry")}>INDUSTRY</p>
+                            <p className='cncExpertText' onClick={() => handleScrollTo("Equipment")}>EQUIPMENT</p>
+                            <p className='cncExpertText' onClick={() => handleScrollTo("AboutGETTECH")}>ABOUT GET-TECH</p>
+                            <p className='cncExpertText' onClick={() => handleScrollTo("ContactUs")}>CONTACT US</p>
+                            <p className='cncExpertText' onClick={() => handleScrollTo("Ch-Group")}>CH-GROUP</p>
                         </div>
                     </div>
                 </div>

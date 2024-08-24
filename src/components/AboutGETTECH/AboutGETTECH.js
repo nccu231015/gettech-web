@@ -27,7 +27,7 @@ const AboutGETTECH = (props) => {
                         </div>
                     </div>
                 </div>
-                <img className="heroImage" src={"/assets/Horizon.png"} alt="Horizontal Line" />
+                <img className="heroImage" id="secondHorizon" src={"/assets/Horizon.png"} alt="Horizontal Line" />
             </div>
         </div>
     )

@@ -29,6 +29,13 @@ import InfoCard from "./components/InfoCard/InfoCard";
 import TitleBox from "./components/TitleBox/TitleBox";
 import TextBox from "./components/TextBox/TextBox";
 import ArticleTitle from "./components/ArticleTitle/ArticleTitle";
+<<<<<<< Updated upstream
+=======
+import ContactUs from "./components/ContactUs/ContactUs";
+import EquipmentInfo from "./components/EquipmentInfo/EquipmentInfo";
+import NewMachineCard from "./components/NewMachineCard/NewMachineCard";
+import EquipmentTitle from "./components/EquipmentTitle/EquipmentTitle";
+>>>>>>> Stashed changes
 
 
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY);
@@ -52,67 +59,79 @@ Builder.registerComponent(CarouselBanner,{
         },
       ],
 
+<<<<<<< Updated upstream
+=======
+Builder.registerComponent(EquipmentInfo,{
+  name: 'EquipmentInfo',
+  inputs:[
+    {
+      name: 'cardList',
+      type: 'list',
+      defaultValue: [
+            {MainTitle: "123",
+            brand: "123",
+            ModelNumber: "123",
+            Quantity: "123"},
+          ],
+      subFields: [
+        {
+          name: 'MainTitle',
+          type:'string',
+          defaultValue: 'VERTICAL FOUR-AXIS MILLING MACHINE',
+        },
+        {
+          name: 'brand',
+          type:'string',
+          defaultValue: 'Brother',
+        },
+        {
+          name: 'ModelNumber',
+          type:'string',
+          defaultValue: 'SPEEDOP S700X2(HIGH-Torque)',
+        },
+        {
+          name: 'Quantity',
+          type:'string',
+          defaultValue: '4',
+        },
+      ],
+>>>>>>> Stashed changes
     }
   ]
   
 })
 
-Builder.registerComponent(MachineCard,{
-  name: 'MachineCard',
+Builder.registerComponent(NewMachineCard,{
+  name: 'NewMachineCard',
   inputs:[
     {
-      name: 'title',
-      type:'string',
-      defaultValue: 'MachineTitle',
-    },
-    {
-      name:'image',
-      type:'file',
-      allowedFileTypes: ['jpeg', 'jpg', 'png', 'svg'],
-      required: true,
-      defaultValue:  'https://cdn.builder.io/api/v1/image/assets%2Fpwgjf0RoYWbdnJSbpBAjXNRMe9F2%2Ffb27a7c790324294af8be1c35fe30f4d',
-    },
-    {
-      name:'description',
-      type:'string',
-      defaultValue: 'Machine Description Here',
-    },
-  ]
-})
-
-Builder.registerComponent(MachineCardLoop,{
-  name: 'machineLooping',
-  inputs:[
-    {
-      name: 'addProd',
-      type:'list',
-      defaultValue:[
-        { title: 'MachineTitle',
-          image:'https://cdn.builder.io/api/v1/image/assets%2Fpwgjf0RoYWbdnJSbpBAjXNRMe9F2%2Ffb27a7c790324294af8be1c35fe30f4d',
-          description: 'Machine Description Here'
+      name: 'machineCardList',
+      type: 'list',
+      defaultValue: [
+            {title: "MachineTitle",
+            image: "https://cdn.builder.io/api/v1/image/assets%2Fpwgjf0RoYWbdnJSbpBAjXNRMe9F2%2Ffb27a7c790324294af8be1c35fe30f4d",
+            description: "Machine Description Here",
+            },
+          ],
+      subFields: [
+        {
+          name: 'title',
+          type:'string',
+          defaultValue: 'MachineTitle',
         },
-      
+        {
+          name:'image',
+          type:'file',
+          allowedFileTypes: ['jpeg', 'jpg', 'png', 'svg'],
+          required: true,
+          defaultValue:  'https://cdn.builder.io/api/v1/image/assets%2Fpwgjf0RoYWbdnJSbpBAjXNRMe9F2%2Ffb27a7c790324294af8be1c35fe30f4d',
+        },
+        {
+          name:'description',
+          type:'string',
+          defaultValue: 'Machine Description Here',
+        },
       ],
-      subFields:[
-          {
-            name: 'title',
-            type:'string',
-            defaultValue: 'MachineTitle',
-          },
-          {
-            name:'image',
-            type:'file',
-            allowedFileTypes: ['jpeg', 'jpg', 'png', 'svg'],
-            required: true,
-            defaultValue:  'https://cdn.builder.io/api/v1/image/assets%2Fpwgjf0RoYWbdnJSbpBAjXNRMe9F2%2Ffb27a7c790324294af8be1c35fe30f4d',
-          },
-          {
-            name:'description',
-            type:'string',
-            defaultValue: 'Machine Description Here',
-          },
-        
-      ]
     }
   ]
 })
@@ -132,6 +151,19 @@ Builder.registerBlock(CNCIndustry,{
   inputs:[]
 })
 
+<<<<<<< Updated upstream
+=======
+Builder.registerBlock(ContactUs,{
+  name: 'ContactUs',
+  inputs:[]
+})
+
+Builder.registerBlock(EquipmentTitle,{
+  name: 'EquipmentTitle',
+  inputs:[]
+})
+
+>>>>>>> Stashed changes
 Builder.registerBlock(MediumTitle,{
   name: 'MediumTitle',
   inputs:[
@@ -147,6 +179,7 @@ Builder.registerComponent(EquipmentCard,{
   name: 'EquipmentCard',
   inputs:[
     {
+<<<<<<< Updated upstream
       name: 'titleText',
       type:'string',
       defaultValue: 'Title Here',
@@ -158,6 +191,47 @@ Builder.registerComponent(EquipmentCard,{
       required: true,
       defaultValue:  '/assets/four-axis1.png',
     },
+=======
+      name: 'equipmentCardList',
+      type: 'list',
+      defaultValue: [
+            {titleText: "Title Here",
+            image: "/assets/four-axis1.png",
+            brand: "Brand Here",
+            model_number: "Model Number Here",
+            quantity:"Quantity Here"},
+          ],
+      subFields: [
+        {
+          name: 'titleText',
+          type:'string',
+          defaultValue: 'Title Here',
+        },
+        {
+          name:'image',
+          type:'file',
+          allowedFileTypes: ['jpeg', 'jpg', 'png', 'svg'],
+          required: true,
+          defaultValue:  '/assets/four-axis1.png',
+        },
+        {
+          name: 'brand',
+          type:'string',
+          defaultValue: 'Brand Here',
+        },
+        {
+          name: 'model_number',
+          type:'string',
+          defaultValue: 'Model Number Here',
+        },
+        {
+          name: 'quantity',
+          type:'string',
+          defaultValue: 'Quantity Here',
+        },
+      ],
+    }
+>>>>>>> Stashed changes
   ]
 })
 

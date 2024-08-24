@@ -6,6 +6,8 @@
   background: center center / 100% 100% no-repeat;
   background-image: url("/assets/CNCIndustry_background.png");
   border-radius: 20px;
+  width: 100%;
+  height: 100%;
   position: relative;
 
   .overlay {
@@ -31,87 +33,133 @@
   }
 }
   
-  .flexColGroup {
-    display: flex;
-    flex-direction: column;
-    gap: 174px 0;
-    margin: 50px 37px 105px 35px;
-  }
+.flexColGroup {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 8rem 0;
+}
   
-  .flexRowGroup {
-    display: flex;
+.flexRowGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  height: auto;
+
+  @include md {
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 0 24px;
+  }
+
+}
   
-    @include xl {
-      flex-direction: column;
-      gap: 8px 24px;
-    }
+.imageMachinery {
+  width: 46.8vw;
+  filter: drop-shadow(0 0 20px rgb(0 0 0 / 25%));
+  padding-top: 1.25rem;
+
+  @include md {
+    width: calc(100vw - 2 * 2rem);
+    padding: 0 2rem;
+  }
+
+  @include sm {
+    width: calc(100vw - 2 * 1rem);
+    padding: 0 1rem;
+  }
+
+  @include xxs {
+    width: calc(100vw - 2 * 0.5rem);
+    padding: 0 0.5rem;
+  }
+
+}
+
+.rightColBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 46.8vw;
+  margin: 3rem 1.5rem 2rem 1.5rem;
+
+  @include xl {
+    margin: 2rem 1.5rem 1rem 1.5rem;
+  }
+
+  @include md {
+    width: calc(100vw - 2 * 2rem);
+    padding: 0 2rem;
+    aspect-ratio: 927 / 1041.25;
+  }
+
+  @include sm {
+    width: calc(100vw - 2 * 1rem);
+    padding: 0 1rem;
+    aspect-ratio: 927 / 1041.25;
+  }
+
+  @include sm {
+    width: calc(100vw - 2 * 0.3rem);
+    padding: 0 0.3rem;
+    aspect-ratio: 927 / 1041.25;
   }
   
-  .imageMachinery {
-    width: 46.8%;
-    min-width: 0;
-    filter: drop-shadow(0 0 20px rgb(0 0 0 / 25%));
+}
   
-    @include xl {
-      margin-top: unset;
-      margin-bottom: unset;
-      width: 100%;
-    }
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 47.5%;
+  background: center center / 100% 100% no-repeat;
+  background-image: url("/assets/MillingMachine_Img.png");
+  border-radius: 16px;
+  filter: drop-shadow(0 0 20px rgb(0 0 0 / 25%));
+
+  @include md {
+    width: calc(100% - 2 * 1.5rem);
+    height: 47.5%;
   }
-  
-  .flexColBox {
-    display: flex;
-    flex-direction: column;
-    place-content: stretch space-evenly;
-    gap: 20px 0;
-    width: 46.8%;
-    min-width: 0;
-  
-    @include xl {
-      width: 100%;
-    }
+
+}
+
+.imageContainer2 {
+  position: relative;
+  width: 100%;
+  height: 47.5%;
+  background: center center / 100% 100% no-repeat;
+  background-image: url("/assets/CarMilling_Img.png");
+  border-radius: 16px;
+  filter: drop-shadow(0 0 20px rgb(0 0 0 / 25%));
+
+  @include md {
+    width: calc(100% - 2 * 1.5rem);
+    height: 47.5%;
   }
+
+}
   
-  .imageContainer {
-    position: relative;
-    min-height: 29.5rem;
-    background: center center / 100% 100% no-repeat;
-    background-image: url("/assets/MillingMachine_Img.png");
-    border-radius: 16px;
-    filter: drop-shadow(0 0 20px rgb(0 0 0 / 25%));
-    overflow: hidden;
-  
-    @include xl {
-      min-height: 42rem;
-    }
-  
-    @include lg {
-      min-height: 38rem;
-    }
-  
-    @include md {
-      min-height: 25rem;
-    }
-  
-    @include sm {
-      min-height: 22rem;
-    }
-  
-    @include xs {
-      min-height: 20rem;
-    }
-  
-    @include xxs {
-      min-height: 14rem;
-    }
-  
-    @include tn {
-      min-height: 13rem;
-    }
+.titleMillingMachine {
+  position: absolute;
+  top: 5%;
+  left: 2.5%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 35px;
+  // background: center center / 100% 100% no-repeat;
+  // background-image: url("/assets/Title_Background.svg");
+  background: linear-gradient(0, #CD313F 44%, #972233 100%);
+  border-radius: 10px;
+  filter: drop-shadow(1px 1px 5px rgb(0 0 0 / 25%));
+
+  @include md {
+    width: 95%;
+    border-radius: 2px;
+    padding: 0.5rem 0;
   }
+<<<<<<< Updated upstream
   
   .imageProcessing {
     position: absolute;
@@ -129,95 +177,48 @@
       width: 55px;
       height: 55px;
     }
+=======
+
+  @include xs {
+    top: 7.5%;
+    left: 5%;
+    width: 90%;
+>>>>>>> Stashed changes
   }
-  
-  .titleMillingMachine {
-    position: absolute;
+
+  @include xxs {
     top: 5%;
-    left: 2.5%;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    height: 35px;
-    background: center center / 100% 100% no-repeat;
-    background-image: url("/assets/Title_Background.png");
-    border-radius: 10px;
-    filter: drop-shadow(1px 1px 5px rgb(0 0 0 / 25%));
-  
-    @include xl {
-      width: 95%;
-      height: 15%;
-    }
+    padding: 0;
   }
-  
-  .medium_title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    font: 500 24px/1.29 "Chakra Petch", Helvetica, Arial, serif;
-    color: rgb(252 233 231);
-    text-align: center;
-  
-    @include xl {
-      align-items: center;
-      font-size: 48px;
-    }
-  
-    @include lg {
-      font-size: 46px;
-    }
-  
-    @include sm {
-      font-size: 34px;
-    }
-  
-    @include xs {
-      font-size: 32px;
-    }
-  
-    @include xxs {
-      font-size: 18px;
-    }
+
+}
+
+.flexColBox3 {
+  position: absolute;
+  top: 5%;
+  left: 2.5%;
+  display: flex;
+  flex-direction: column;
+  width: 82%;
+  height: 35px;
+  // background: center center / 100% 100% no-repeat;
+  // background-image: url("/assets/Title_Background.svg");
+  background: linear-gradient(0, #CD313F 44%, #972233 100%);
+  border-radius: 10px;
+  filter: drop-shadow(1px 1px 5px rgb(0 0 0 / 25%));
+
+  @include md {
+    width: 95%;
+    border-radius: 2px;
+    padding: 0.5rem 0;
   }
-  
-  .flexColBox2 {
-    position: relative;
-    min-height: 29.5rem;
-    background: center center / 100% 100% no-repeat;
-    background-image: url("/assets/CarMilling_Img.png");
-    border-radius: 16px;
-    filter: drop-shadow(0 0 20px rgb(0 0 0 / 25%));
-  
-    @include xl {
-      min-height: 42rem;
-    }
-  
-    @include lg {
-      min-height: 38rem;
-    }
-  
-    @include md {
-      min-height: 25rem;
-    }
-  
-    @include sm {
-      min-height: 22rem;
-    }
-  
-    @include xs {
-      min-height: 20rem;
-    }
-  
-    @include xxs {
-      min-height: 14rem;
-    }
-  
-    @include tn {
-      min-height: 13rem;
-    }
+
+  @include xs {
+    top: 7.5%;
+    left: 5%;
+    width: 90%;
   }
+<<<<<<< Updated upstream
   
   .imageProcessingAlt {
     position: absolute;
@@ -239,171 +240,353 @@
   
   .flexColBox3 {
     position: absolute;
+=======
+
+  @include xxs {
+>>>>>>> Stashed changes
     top: 5%;
-    left: 2.5%;
-    display: flex;
-    flex-direction: column;
-    width: 82%;
-    height: 35px;
-    background: center center / 100% 100% no-repeat;
-    background-image: url("/assets/Title_Background.png");
-    border-radius: 10px;
-    filter: drop-shadow(1px 1px 5px rgb(0 0 0 / 25%));
-    overflow: hidden;
-  
-    @include xl {
-      width: 95%;
-      height: 15%;
-    }
+    padding: 0;
   }
+
+}
   
-  .titleCarMilling {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    font: 600 24px/1.29 "Chakra Petch", Helvetica, Arial, serif;
-    color: rgb(252 233 231);
-    text-align: center;
+.medium_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font: 500 24px/1.29 "Chakra Petch", Helvetica, Arial, serif;
+  color: rgb(252 233 231);
+  text-align: center;
+  text-wrap: nowrap;
   
-    @include xl {
-      align-items: center;
-      font-size: 48px;
-    }
-  
-    @include lg {
-      font-size: 46px;
-    }
-  
-    @include md {
-      font-size: 32px;
-    }
-  
-    @include sm {
-      font-size: 28px;
-    }
-  
-    @include xs {
-      font-size: 24px;
-    }
-  
-    @include xxs {
-      font-size: 16px;
-    }
-  
-    @include tn {
-      font-size: 14px;
-    }
+  @include xl {
+    font-size: 20px;
   }
-  
-  .flexColGroup2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 48px 0;
-    margin: 0 0 0 2px;
+
+  @include md {
+    font-size: 24px;
   }
+
+  @include sm {
+    font-size: 22px;
+  }
+
+  @include xs {
+    font-size: 20px;
+  }
+
+  @include xxs {
+    font-size: 18px;
+  }
+
+  @include tn {
+    font-size: 15px;
+  }
+
+}
+  
+.imageProcessing {
+  position: absolute;
+  right: 2.5%;
+  bottom: 5%;
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+
+  @include xl {
+    width: 50px;
+    height: 50px;
+  }
+
+  @include md {
+    width: 60px;
+    height: 60px;
+  }
+
+  @include xxs {
+    width: 50px;
+    height: 50px;
+  }
+
+  @include tn {
+    width: 45px;
+    height: 45px;
+  }
+}
+  
+.flexColGroup2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px 0;
+  margin: 0 4rem 8rem 4rem;
+
+  @include xl {
+    margin: 0 0 8rem 0;
+  }
+
+}
   
   .heroTitleIndustry {
-    font: 700 88px/1.29 "Chakra Petch", Helvetica, Arial, serif;
+    margin-left: 1rem;
+    font: 700 76px/1.29 "Chakra Petch", Helvetica, Arial, serif;
     color: rgb(254 243 242);
+    filter: drop-shadow(1px 1px 5px rgb(0 0 0 / 25%));
   
-    @include sm {
+    @include md {
       align-items: flex-start;
+      font-size: 108px;
+      margin-left: 4rem;
+    }
+
+    @include sm {
+      margin-left: 2rem;
       font-size: 80px;
     }
   
     @include xs {
+      margin-left: 1rem;
       font-size: 74px;
     }
   
     @include xxs {
       font-size: 60px;
     }
+
+    @include tn {
+      font-size: 56px;
+    }
   }
   
   .flexRowGroup1 {
     display: flex;
-    justify-content: space-evenly;
-    gap: 0 8px;
-  
-    @include mq-between(xxl, xxxl) {
-      column-gap: 8px;
-    }
-  
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0 2rem;
+
     @include xl {
-      flex-wrap: wrap;
-      column-gap: 8px;
+      gap: 0 1rem;
     }
+    
+    @include md {
+      display: none;
+      gap: 0 2rem;
+    }
+
+  }
+
+  .mdAltGroup {
+    display: none;
+
+    @include md {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    @include xs {
+      gap: 1rem;
+    }
+
+  }
+
+  #groupCustomize {
+
+    @include md {
+      padding-top: 0;
+    }
+
+  }
+
+  .mdAltRightCol {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @include xs {
+      gap: 1rem;
+    }
+
+  }
+
+  .mdAltLeftCol {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @include xs {
+      gap: 1rem;
+    }
+
   }
   
   .imagePairGroupAerospace {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 118px;
-    width: 22.8%;
-    min-width: 0;
+    // display: flex;
+    // flex-direction: column;
+    // padding: 0 0 118px;
+    width: calc((100vw - 3 * 2rem - 2 * 4rem) / 4);
+
+    @include xl {
+      width: calc((100vw - 5 * 1rem) / 4);
+    }
+
+    @include md {
+      width: calc((100vw - 2 * 4rem - 2rem) / 2);
+    }
+
+    @include sm {
+      width: calc((100vw - 2 * 2rem - 2rem) / 2);
+    }
+
+    @include xs{
+      width: calc((100vw - 2 * 1rem - 1rem) / 2);
+    }
+
+  }
+
+  .imagePairGroupMilitary {
+    position: relative;
+    // display: flex;
+    // flex-direction: column;
+    // padding: 0 0 118px;
+    width: calc((100vw - 3 * 2rem - 2 * 4rem) / 4);
+    padding-top: 7rem;
+
+    @include xl {
+      width: calc((100vw - 5 * 1rem) / 4);
+    }
+
+    @include md {
+      width: calc((100vw - 2 * 4rem - 2rem) / 2);
+    }
+
+    @include sm {
+      width: calc((100vw - 2 * 2rem - 2rem) / 2);
+    }
+
+    @include xs{
+      width: calc((100vw - 2 * 1rem - 1rem) / 2);
+    }
+
   }
   
   .coverImageAerospace {
     position: relative;
     width: 100%;
+    aspect-ratio: 326 / 371;
     border-radius: 16px;
     filter: drop-shadow(0 0 20px rgb(0 0 0 / 25%));
   }
   
-  .image8Aerospace {
+  .imageAerospace {
     position: absolute;
+<<<<<<< Updated upstream
     right: 2.5%;
     bottom: 2.5%;
     width: 45px;
     height: 45px;
+=======
+    left: 90%;
+    bottom: 18%;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+    @include xl {
+      left: 87.5%;
+      bottom: 27.5%;
+      width: 45px;
+      height: 45px;
+    }
+>>>>>>> Stashed changes
   
     @include md {
       right: 4%;
-      bottom: 4%;
-      width: 40px;
-      height: 40px;
+      bottom: 0%;
+      width: 60px;
+      height: 60px;
     }
   
     @include sm {
-      width: 35px;
-      height: 35px;
+      width: 55px;
+      height: 55px;
     }
   
     @include xs {
-      width: 30px;
-      height: 30px;
+      width: 40px;
+      height: 40px;
+    }
+
+    @include tn {
+      left: 85%;
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .imageMilitary {
+    position: absolute;
+    left: 90%;
+    bottom: calc(18% - 7rem);
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+    @include xl {
+      left: 87.5%;
+      bottom: calc(27.5% - 7rem);
+      width: 45px;
+      height: 45px;
+    }
+  
+    @include md {
+      right: 4%;
+      bottom: 0%;
+      width: 60px;
+      height: 60px;
+    }
+  
+    @include sm {
+      width: 55px;
+      height: 55px;
+    }
+  
+    @include xs {
+      width: 40px;
+      height: 40px;
+    }
+
+    @include tn {
+      left: 85%;
+      width: 35px;
+      height: 35px;
     }
   }
   
-  .contentBoxAerospace {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    height: 10%;
-    background: center center / 100% 100% no-repeat;
-    background-image: url("/assets/Title_Background.png");
-    border-radius: 10px;
-    filter: drop-shadow(1px 1px 5px rgb(0 0 0 / 25%));
-  }
-  
   .titleAerospace {
+    position: absolute;
+    top: 4%;
+    right: 5%;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin: auto;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    border-radius: 10px;
+    background: linear-gradient(0, #CD313F 44%, #972233 100%);
     font: 500 24px/1.29 "Chakra Petch", Helvetica, Arial, serif;
     color: rgb(254 243 242);
+    padding: 2px 0;
+
+    @include xl {
+      font-size: 20px;
+    }
   
     @include lg {
       align-items: center;
@@ -411,21 +594,87 @@
     }
   
     @include md {
-      font-size: 18px;
+      font-size: 32px;
+      border-radius: 2px;
     }
   
     @include sm {
-      font-size: 12px;
+      font-size: 30px;
+    }
+
+    @include xs {
+      font-size: 26px;
+      width: 85%;
+      right: 7.5%;
+      top: 6%;
+    }
+
+    @include xxs {
+      font-size: 24px;
+    }
+
+    @include tn {
+      font-size: 20px;
+    }
+
+  }
+
+
+  .titleMilitary {
+    position: absolute;
+    top: calc(4% + 7rem);
+    right: 5%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 90%;
+    border-radius: 10px;
+    background: linear-gradient(0, #CD313F 44%, #972233 100%);
+    font: 500 24px/1.29 "Chakra Petch", Helvetica, Arial, serif;
+    color: rgb(254 243 242);
+    padding: 2px 0;
+
+    @include xl {
+      font-size: 20px;
+    }
+  
+    @include lg {
+      align-items: center;
+      font-size: 20px;
+    }
+  
+    @include md {
+      font-size: 32px;
+      border-radius: 2px;
+    }
+  
+    @include sm {
+      font-size: 30px;
+    }
+
+    @include xs {
+      font-size: 26px;
+      width: 85%;
+      right: 7.5%;
+      top: calc(6% + 6.5rem);
+    }
+
+    @include tn {
+      font-size: 20px;
     }
   }
-  
-  .imagePairGroupMilitary {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin: 118px 0 0;
-    width: 22.8%;
-    min-width: 0;
+
+  #altCustomizeTitle {
+
+    @include md {
+      top: 4%;
+    }
+
+    @include xs {
+      top: 6%;
+    }
+
   }
   
   .coverImageMilitary {
@@ -472,31 +721,6 @@
     background-image: url("/assets/Title_Background.png");
     border-radius: 10px;
     filter: drop-shadow(1px 1px 5px rgb(0 0 0 / 25%));
-  }
-  
-  .titleMilitary {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2px auto;
-    width: 100%;
-    height: 100%;
-    font: 500 24px/1.29 "Chakra Petch", Helvetica, Arial, serif;
-    color: rgb(254 243 242);
-    text-align: center;
-  
-    @include lg {
-      align-items: center;
-      font-size: 20px;
-    }
-  
-    @include md {
-      font-size: 18px;
-    }
-  
-    @include sm {
-      font-size: 12px;
-    }
   }
 
   .titleCustomize {

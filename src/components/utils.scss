@@ -1,5 +1,5 @@
 $mq-breakpoints: (tn: 384, xxs: 480, xs: 576, sm: 768, md: 992,
-        lg: 1200, xl: 1400, xxl: 1920, xxxl: 3000, max: 100000);
+        lg: 1025, xl: 1441, xxl: 1920, xxxl: 3000, max: 100000);
 
 @function breakpoint-max($name, $breakpoints: $mq-breakpoints) {
     $max: map-get($breakpoints, $name);
