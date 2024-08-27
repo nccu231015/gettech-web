@@ -5,6 +5,7 @@
 :root {
   width: 100vw;
   scroll-behavior: smooth;
+  overflow-x: hidden;
   box-sizing: border-box;
   --max-width: 1100px;
   --border-radius: 12px;

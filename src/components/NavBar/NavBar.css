@@ -1,11 +1,11 @@
-.container {
+.nb_container {
   display: flex;
   justify-content: center;
   width: calc(100% - 4rem);
   margin: 0 2rem;
 }
 @media (max-width: 991px) {
-  .container {
+  .nb_container {
     display: contents;
   }
 }
