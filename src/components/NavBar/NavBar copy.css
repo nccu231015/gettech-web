@@ -1,11 +1,11 @@
-.nb_container {
+.container {
   display: flex;
   justify-content: center;
   width: calc(100% - 4rem);
   margin: 0 2rem;
 }
 @media (max-width: 991px) {
-  .nb_container {
+  .container {
     display: contents;
   }
 }
@@ -51,7 +51,7 @@
   align-items: center;
   width: 96px;
   height: 34px;
-  font: 500 16px/1.31 "Chakra Petch", "Noto Sans TC", Arial, serif;
+  font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
   color: rgb(255, 242, 242);
   text-align: center;
   background-color: rgb(244, 173, 173);
@@ -201,4 +201,4 @@ input {
 
 .downVector {
   cursor: pointer;
-}/*# sourceMappingURL=NavBar.css.map */
+}/*# sourceMappingURL=NavBar copy.css.map */

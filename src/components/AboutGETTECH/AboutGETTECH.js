@@ -1,11 +1,15 @@
 
 import Image from "next/image"
 import { builder } from '@builder.io/sdk';
+import { useRouter } from 'next/navigation';
 import './AboutGETTECH.css'
 
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY);
 
 const AboutGETTECH = (props) => {
+
+    const router = useRouter();
+
     return(
         <div id="AboutGETTECH" className="aboutSection">
             <div className="flexColumn">
@@ -22,12 +26,12 @@ const AboutGETTECH = (props) => {
                             <div className="aboutSubTitle">{props.ArticleTitle}</div>
                             <div className="textGroup">
                                 <div className="descriptiveSubtitle">{props.ArticlePreview}</div>
-                                <img className="ag_additionalImage" src={"/assets/ArrowButton.png"} alt="Arrow Buttton" />
+                                <img className="ag_additionalImage" onClick={() => router.push("/about-get-tech")} src={"/assets/right_arrow.svg"} alt="Arrow Buttton" />
                             </div>
                         </div>
                     </div>
                 </div>
-                <img className="heroImage" id="secondHorizon" src={"/assets/Horizon.png"} alt="Horizontal Line" />
+                <img className="heroImage" src={"/assets/Horizon.png"} alt="Horizontal Line" />
             </div>
         </div>
     )

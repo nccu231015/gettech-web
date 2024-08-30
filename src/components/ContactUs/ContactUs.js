@@ -36,27 +36,55 @@ export default function ContactUs({props}){
         setIsHovered(false);
     };
 
-    const sendEmail = (e) => {
+    const sendEmail = async (e) => {
 
         e.preventDefault();
 
-        emailjs
-            .sendForm(
-                process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ?? "",
-                process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ?? "",
-                form.current,
-                process.env.NEXT_PUBLIC_EMAILJS_USER_ID
-            )
-            .then(
-                () => {
-                    console.log("Email sent successfully!");
-                    handleShowAlert();
-                    setTimeout(handleHideAlert, 3000);
+        const formData = {
+            from_name: form.current.from_name.value,
+            from_email: form.current.from_email.value,
+            phone_number: form.current.phone_number.value,
+            company: form.current.company.value,
+            message: form.current.message.value,
+        };
+
+        try {
+            const response = await fetch('/api/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
                 },
-                (error) => {
-                    console.error("Failed to send email: ", error);
-                },
-            );
+                body: JSON.stringify(formData),
+            });
+
+            if(response.ok) {
+                console.log("Email sent successfully!");
+                handleShowAlert()
+                setTimeout(handleHideAlert, 3000);
+            } else {
+                console.error("Failed to send email");
+            }
+        } catch(error) {
+            console.error("Error", error);
+        }
+
+        // emailjs
+        //     .sendForm(
+        //         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ?? "",
+        //         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ?? "",
+        //         form.current,
+        //         process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+        //     )
+        //     .then(
+        //         () => {
+        //             console.log("Email sent successfully!");
+        //             handleShowAlert();
+        //             setTimeout(handleHideAlert, 3000);
+        //         },
+        //         (error) => {
+        //             console.error("Failed to send email: ", error);
+        //         },
+        //     );
     };
 
     return(

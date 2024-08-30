@@ -1,6 +1,6 @@
 @use "../utils" as *;
 
-.nb_container{
+.container{
     display: flex;
     justify-content: center;
     width: calc(100% - 2 * 2rem);
@@ -46,7 +46,7 @@
     align-items: center;
     width: 96px;
     height: 34px;
-    font: 500 16px/1.31 "Chakra Petch", "Noto Sans TC", Arial, serif;
+    font: 500 16px/1.31 "Chakra Petch", Helvetica, Arial, serif;
     color: rgb(255 242 242);
     text-align: center;
     background-color: rgb(244 173 173);
